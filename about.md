@@ -104,6 +104,14 @@ permalink: /about/
             <i class="fab fa-github"></i>
             <span>GitHub</span>
           </a>
+          <a href="https://blog.csdn.net/zxlp520" target="_blank" class="contact-link">
+            <i class="fas fa-blog"></i>
+            <span>CSDN 博客</span>
+          </a>
+          <a href="https://juejin.cn/user/1239904848969895" target="_blank" class="contact-link">
+            <i class="fas fa-gem"></i>
+            <span>掘金</span>
+          </a>
         </div>
       </div>
     </div>

@@ -47,8 +47,18 @@
                     
                     <div class="navbar-social">
                         {% if site.social.github %}
-                        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">
+                        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener" title="GitHub">
                             <i class="fab fa-github"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.csdn %}
+                        <a href="{{ site.social.csdn }}" target="_blank" rel="noopener" title="CSDN 博客">
+                            <i class="fas fa-blog"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.juejin %}
+                        <a href="{{ site.social.juejin }}" target="_blank" rel="noopener" title="掘金">
+                            <i class="fas fa-gem"></i>
                         </a>
                         {% endif %}
                     </div>
@@ -82,8 +92,18 @@
                     <h4>关注我</h4>
                     <div class="social-links">
                         {% if site.social.github %}
-                        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">
+                        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener" title="GitHub">
                             <i class="fab fa-github"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.csdn %}
+                        <a href="{{ site.social.csdn }}" target="_blank" rel="noopener" title="CSDN 博客">
+                            <i class="fas fa-blog"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.juejin %}
+                        <a href="{{ site.social.juejin }}" target="_blank" rel="noopener" title="掘金">
+                            <i class="fas fa-gem"></i>
                         </a>
                         {% endif %}
                     </div>
