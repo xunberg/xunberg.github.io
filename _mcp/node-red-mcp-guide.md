@@ -43,7 +43,7 @@ npm install /path/to/your/node-red-contrib-mcp-server-1.1.5.tgz
 
 一个核心要点是：在 `mcp-flow-server` 节点的 `router` 分支后的 `function` 节点中，**应避免直接修改或覆盖传入的 `msg` 对象**。
 
-![image.png](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/ZWGl05mEJXgdZn34/img/aa6359bb-7348-4c3e-93b6-dc3c63efd8eb.png)
+![Node-RED MCP 流程图]({{ '/assets/images/mcp/nodered-mcp-flow.png' | relative_url }})
 
 **原因分析**：
 插件内部需要通过 `msg.payload.executionId` 来追踪和匹配工具的请求与响应。如果你在 `function` 节点中直接 `msg = { payload: 'new data' }`，会丢失原始的 `executionId` 等重要信息，导致后续的响应无法被正确识别，流程中断。
@@ -81,7 +81,7 @@ return {
 
 另一个常见的陷阱是，在流程的最后构建返回给客户端的 `MCP Response` 时，未能严格遵守 MCP 的 `Tools response` 规范。
 
-![image.png](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/ZWGl05mEJXgdZn34/img/a328273f-1822-437d-abb0-66f9ef4f1972.png)
+![MCP Response 格式]({{ '/assets/images/mcp/mcp-response-format.png' | relative_url }})
 
 **后果**：
 即使你的 Node-RED 流程运行正常，但如果响应格式不正确，MCP 客户端（如 Dify、Claude Desktop）也无法解析，最终导致调用失败。
@@ -125,9 +125,9 @@ return {
 **原因分析**：
 根据 [MCP 生命周期规范](https://modelcontextprotocol.io/specification/2025-06-18/basic/lifecycle)，在客户端完成工具列表的初始化后，会向服务端发送一个 `notifications/initialized` 通知。服务端收到此通知后，整个 MCP 会话才被认为是完全建立的。可以将其理解为一种**“握手”机制**，确认双方都已准备就绪。如果服务端不响应或不处理此事件，客户端可能会认为连接尚未成功建立，从而拒绝后续的工具调用。
 
-![MCP Lifecycle Diagram](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/ZWGl05mEJXgdZn34/img/2175516a-4f2d-4a6f-b440-d277cf3af62e.png)
+![MCP Lifecycle Diagram](/assets/images/mcp/mcp-lifecycle.png)
 
-![Initialized Notification Detail](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/ZWGl05mEJXgdZn34/img/42cef1f4-61fe-411e-8a61-848321db127d.png)
+![Initialized Notification Detail](/assets/images/mcp/initialized-notification.png)
 
 此增强版插件已在内部处理了该逻辑，你无需额外配置，这确保了与主流平台的兼容性。
 
@@ -136,7 +136,7 @@ return {
 以下提供一个完整的 Node-RED 流程示例，用于演示如何通过 MCP 调用一个模拟的电子天平设备来获取重量。你可以直接复制下方的 JSON 代码，并通过 Node-RED 的 **导入** 功能使用。
 
 **流程概览**:
-![image.png](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/ZWGl05mEJXgdZn34/img/09052c60-4eaf-43e2-a4ff-3d9519401e0f.png)
+![流程示例]({{ '/assets/images/mcp/balance-flow-example.png' | relative_url }})
 
 **流程 JSON**:
 ```json

@@ -51,13 +51,19 @@ permalink: /mcp/mcp-dify-integration/
 
 配置完成后，保存即可。
 
+![Dify MCP Plugin Setting](/assets/images/mcp/mcp-dify-integration-setting.png)
+
 ### 第三步：在 Agent 中启用新工具
 
 服务注册成功后，我们就可以在创建或编辑 Agent 时，将其作为可用工具添加进来了。
 
 1. 在 Agent 的"工具"配置部分，点击"添加工具"。
 
+![Dify MCP Agent Tools](/assets/images/mcp/mcp-dify-integration-agent-add-tools.png)
+
 2. 从插件列表中，选择我们刚刚配置好的 "MCP SSE / StreamableHTTP" 插件。Dify 会自动发现并通过该插件获取到你在 Node-RED 中注册的工具（例如 `get_weight_tool`）。
+
+![Dify MCP Agent Chat](/assets/images/mcp/mcp-dify-integration-agent-agent-chat.png)
 
 ## 总结与展望
 
