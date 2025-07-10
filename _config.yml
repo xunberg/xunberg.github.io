@@ -5,6 +5,7 @@ author: "Xunberg"
 email: "your-email@example.com"
 url: "https://xunberg.github.io"
 baseurl: ""
+last_updated: "2025-07-10"
 
 # Build settings
 markdown: kramdown
