@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI 编程实战：用 Vibe Coding 方式开发移液枪自动化调参系统"
-date: 2025-7-6
+date: 2025-07-06
 category: "AI编程"
 tags: ["AI编程", "Agent", "LLM", "自动化", "前端开发"]
 excerpt: "记录一次完整的 AI 编程实践，从草图到 V1.0，体验 bolt.new + Claude + Copilot 的开发流程。"

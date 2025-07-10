@@ -21,43 +21,6 @@ title: "首页"
 <section id="latest-posts" class="section">
   <div class="container">
     <h2 class="section-title">最新文章</h2>
-    <div class="posts-grid">
-      <article class="post-card">
-        <div class="post-meta">
-          <span class="post-category">MCP 教程</span>
-          <time class="post-date">2025-05-08</time>
-        </div>
-        <h3 class="post-title">
-          <a href="/mcp/mcp_from_0_1/">MCP Server From 0 to 1</a>
-        </h3>
-        <p class="post-excerpt">
-          从零开始构建 MCP Server，详细介绍 Model Context Protocol 的实现原理和实践方法。
-        </p>
-        <div class="post-tags">
-          <span class="tag">Python</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">MCP</span>
-        </div>
-      </article>
-
-      <article class="post-card">
-        <div class="post-meta">
-          <span class="post-category">实战指南</span>
-          <time class="post-date">2025-07-08</time>
-        </div>
-        <h3 class="post-title">
-          <a href="/mcp/node-red-mcp-guide/">Node-RED MCP 插件实践指南</a>
-        </h3>
-        <p class="post-excerpt">
-          详细介绍 Node-RED MCP 插件的安装、配置和使用，包含常见问题的解决方案。
-        </p>
-        <div class="post-tags">
-          <span class="tag">Node-RED</span>
-          <span class="tag">插件</span>
-          <span class="tag">实践</span>
-        </div>
-      </article>
-
       <article class="post-card">
         <div class="post-meta">
           <span class="post-category">AI编程</span>
@@ -75,7 +38,6 @@ title: "首页"
           <span class="tag">自动化</span>
         </div>
       </article>
-
       <article class="post-card">
         <div class="post-meta">
           <span class="post-category">AI Agent</span>
@@ -90,6 +52,77 @@ title: "首页"
         <div class="post-tags">
           <span class="tag">Dify</span>
           <span class="tag">Node-RED</span>
+          <span class="tag">集成</span>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-category">实战指南</span>
+          <time class="post-date">2025-07-08</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/mcp/node-red-mcp-guide/">Node-RED MCP 插件实践指南</a>
+        </h3>
+        <p class="post-excerpt">
+          详细介绍 Node-RED MCP 插件的安装、配置和使用，包含常见问题的解决方案。
+        </p>
+        <div class="post-tags">
+          <span class="tag">Node-RED</span>
+          <span class="tag">插件</span>
+          <span class="tag">实践</span>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-category">MCP 教程</span>
+          <time class="post-date">2025-05-08</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/mcp/mcp_from_0_1/">MCP Server From 0 to 1</a>
+        </h3>
+        <p class="post-excerpt">
+          从零开始构建 MCP Server，详细介绍 Model Context Protocol 的实现原理和实践方法。
+        </p>
+        <div class="post-tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">MCP</span>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-category">技术深度</span>
+          <time class="post-date">2025-04-28</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/mcp/mcp-sse-deep-dive/">深度解析 MCP SSE+HTTP 传输协议：从理论到实践</a>
+        </h3>
+        <p class="post-excerpt">
+          深入分析 MCP 的 SSE+HTTP 传输协议运行机制，从开发 Dify OpenAPI 转 MCP SSE 插件的角度详解实现过程。
+        </p>
+        <div class="post-tags">
+          <span class="tag">MCP</span>
+          <span class="tag">SSE</span>
+          <span class="tag">HTTP</span>
+          <span class="tag">深度解析</span>
+        </div>
+      </article>
+      <div class="posts-grid">
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-category">集成指南</span>
+          <time class="post-date">2025-04-10</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/mcp/dify-local-tools-integration/">Dify 本地工具与 MCP 集成完整指南</a>
+        </h3>
+        <p class="post-excerpt">
+          详细介绍两种方式将本地工具集成到 Dify 平台：OpenAPI 模式和 MCP SSE 模式，包含完整代码示例和配置步骤。
+        </p>
+        <div class="post-tags">
+          <span class="tag">Dify</span>
+          <span class="tag">MCP</span>
+          <span class="tag">本地工具</span>
           <span class="tag">集成</span>
         </div>
       </article>
