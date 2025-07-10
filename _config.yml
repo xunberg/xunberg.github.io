@@ -1,11 +1,58 @@
-lsi: false
-safe: true
-source: [your repo's top level directory]
-incremental: false
+# Site settings
+title: "Xunberg's Tech Blog"
+description: "MCP & AI Agent 技术分享"
+author: "Xunberg"
+email: "your-email@example.com"
+url: "https://xunberg.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
 highlighter: rouge
-gist:
-  noscript: false
+theme: jekyll-theme-minimal
+
+# Kramdown settings
 kramdown:
-  math_engine: mathjax
+  input: GFM
   syntax_highlighter: rouge
-theme: jekyll-theme-minimal  
+  math_engine: mathjax
+  
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: "首页"
+    url: "/"
+  - title: "MCP 教程"
+    url: "/mcp/"
+  - title: "关于"
+    url: "/about/"
+
+# Social links
+social:
+  github: "xunberg"
+  
+# Collections
+collections:
+  posts:
+    output: true
+  mcp:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "mcp"
+    values:
+      layout: "post"  

@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<article class="post">
+    <header class="post-header">
+        <div class="container">
+            <div class="post-meta">
+                {% if page.category %}
+                <span class="post-category">{{ page.category }}</span>
+                {% endif %}
+                {% if page.date %}
+                <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+                    {{ page.date | date: "%Y年%m月%d日" }}
+                </time>
+                {% endif %}
+            </div>
+            
+            <h1 class="post-title">{{ page.title }}</h1>
+            
+            {% if page.excerpt %}
+            <p class="post-excerpt">{{ page.excerpt }}</p>
+            {% endif %}
+            
+            {% if page.tags %}
+            <div class="post-tags">
+                {% for tag in page.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="post-content">
+        <div class="container">
+            {{ content }}
+        </div>
+    </div>
+    
+    <footer class="post-footer">
+        <div class="container">
+            <div class="post-navigation">
+                {% if page.previous %}
+                <div class="nav-previous">
+                    <a href="{{ page.previous.url | relative_url }}">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>{{ page.previous.title }}</span>
+                    </a>
+                </div>
+                {% endif %}
+                
+                {% if page.next %}
+                <div class="nav-next">
+                    <a href="{{ page.next.url | relative_url }}">
+                        <span>{{ page.next.title }}</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </footer>
+</article>

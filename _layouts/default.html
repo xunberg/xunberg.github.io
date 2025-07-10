@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+    
+    <!-- SEO -->
+    {% seo %}
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="{{ '/' | relative_url }}">
+                        <span class="brand-icon">🚀</span>
+                        <span class="brand-text">{{ site.title }}</span>
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="navbar-menu">
+                    {% for item in site.navigation %}
+                    <a href="{{ item.url | relative_url }}" class="navbar-item {% if page.url == item.url %}active{% endif %}">
+                        {{ item.title }}
+                    </a>
+                    {% endfor %}
+                    
+                    <div class="navbar-social">
+                        {% if site.social.github %}
+                        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>{{ site.title }}</h3>
+                    <p>{{ site.description }}</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        {% for item in site.navigation %}
+                        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>关注我</h4>
+                    <div class="social-links">
+                        {% if site.social.github %}
+                        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

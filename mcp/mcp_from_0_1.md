@@ -1,3 +1,15 @@
+---
+layout: post
+title: "MCP Server From 0 to 1"
+date: 2024-12-30
+category: "MCP 教程"
+tags: ["Python", "FastAPI", "MCP", "Server"]
+excerpt: "从零开始构建 MCP Server，详细介绍 Model Context Protocol 的实现原理和实践方法。"
+---
+
+# MCP Server From 0 to 1
+
+```python
 import asyncio
 import uuid
 import uvicorn
@@ -212,3 +224,5 @@ async def message(request: Request, mcpRequest: MCPRequest):
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8009)
+
+```
