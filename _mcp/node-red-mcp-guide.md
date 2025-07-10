@@ -5,6 +5,7 @@ date: 2024-12-28
 category: "实战指南"
 tags: ["Node-RED", "MCP", "插件", "实践"]
 excerpt: "详细介绍 Node-RED MCP 插件的安装、配置和使用，包含常见问题的解决方案。"
+permalink: /mcp/node-red-mcp-guide/
 ---
 
 # Node-RED MCP 插件实践指南：从安装到常见问题解析

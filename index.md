@@ -46,7 +46,7 @@ title: "首页"
           <time class="post-date">2024-12-28</time>
         </div>
         <h3 class="post-title">
-          <a href="/mcp/Node-RED%20MCP%20插件实践指南：从安装到常见问题解析/">Node-RED MCP 插件实践指南</a>
+          <a href="/mcp/node-red-mcp-guide/">Node-RED MCP 插件实践指南</a>
         </h3>
         <p class="post-excerpt">
           详细介绍 Node-RED MCP 插件的安装、配置和使用，包含常见问题的解决方案。
@@ -64,7 +64,7 @@ title: "首页"
           <time class="post-date">2024-12-25</time>
         </div>
         <h3 class="post-title">
-          <a href="/mcp/AI%20Agent%20实战：将%20Node-RED%20创建的%20MCP%20设备服务接入%20Dify/">AI Agent 实战：Node-RED MCP 服务接入 Dify</a>
+          <a href="/mcp/mcp-dify-integration/">AI Agent 实战：Node-RED MCP 服务接入 Dify</a>
         </h3>
         <p class="post-excerpt">
           实战演示如何将通过 Node-RED 创建的 MCP 设备服务成功接入到 Dify 平台。

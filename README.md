@@ -39,12 +39,28 @@ cd xunberg.github.io
 
 2. 安装依赖
 ```bash
-bundle install
+bundle install --path vendor/bundle
 ```
 
 3. 启动开发服务器
 ```bash
+# 基本启动
 bundle exec jekyll serve
+
+# 指定端口
+bundle exec jekyll serve --port 3000
+
+# 允许外部访问（局域网）
+bundle exec jekyll serve --host 0.0.0.0
+
+# 增量构建（更快）
+bundle exec jekyll serve --incremental
+
+# 显示草稿
+bundle exec jekyll serve --drafts
+
+# 实时重载（浏览器自动刷新）
+bundle exec jekyll serve --livereload
 ```
 
 4. 在浏览器中访问 `http://localhost:4000`
