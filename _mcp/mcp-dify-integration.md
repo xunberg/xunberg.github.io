@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Agent 实战：将 Node-RED 创建的 MCP 设备服务接入 Dify"
-date: 2024-12-25
+date: 2025-07-09
 category: "AI Agent"
 tags: ["Dify", "Node-RED", "MCP", "集成"]
 excerpt: "实战演示如何将通过 Node-RED 创建的 MCP 设备服务成功接入到 Dify 平台。"

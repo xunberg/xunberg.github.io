@@ -25,7 +25,7 @@ title: "首页"
       <article class="post-card">
         <div class="post-meta">
           <span class="post-category">MCP 教程</span>
-          <time class="post-date">2024-12-30</time>
+          <time class="post-date">2025-05-08</time>
         </div>
         <h3 class="post-title">
           <a href="/mcp/mcp_from_0_1/">MCP Server From 0 to 1</a>
@@ -43,7 +43,7 @@ title: "首页"
       <article class="post-card">
         <div class="post-meta">
           <span class="post-category">实战指南</span>
-          <time class="post-date">2024-12-28</time>
+          <time class="post-date">2025-07-08</time>
         </div>
         <h3 class="post-title">
           <a href="/mcp/node-red-mcp-guide/">Node-RED MCP 插件实践指南</a>
@@ -60,8 +60,26 @@ title: "首页"
 
       <article class="post-card">
         <div class="post-meta">
+          <span class="post-category">AI编程</span>
+          <time class="post-date">2025-07-06</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/agent/vibe-coding/">AI 编程实战：用 Vibe Coding 方式开发移液枪自动化调参系统</a>
+        </h3>
+        <p class="post-excerpt">
+          记录一次完整的 AI 编程实践，从草图到 V1.0，体验 bolt.new + Claude + Copilot 的开发流程。
+        </p>
+        <div class="post-tags">
+          <span class="tag">AI编程</span>
+          <span class="tag">Agent</span>
+          <span class="tag">自动化</span>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-meta">
           <span class="post-category">AI Agent</span>
-          <time class="post-date">2024-12-25</time>
+          <time class="post-date">2025-07-09</time>
         </div>
         <h3 class="post-title">
           <a href="/mcp/mcp-dify-integration/">AI Agent 实战：Node-RED MCP 服务接入 Dify</a>
