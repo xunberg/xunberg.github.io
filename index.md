@@ -78,7 +78,7 @@ title: "首页"
           <time class="post-date">2025-05-08</time>
         </div>
         <h3 class="post-title">
-          <a href="/mcp/mcp_from_0_1/">MCP Server From 0 to 1</a>
+          <a href="/mcp/mcp_from_0_1/">从0-1实现一个满足 MCP 协议的 Server</a>
         </h3>
         <p class="post-excerpt">
           从零开始构建 MCP Server，详细介绍 Model Context Protocol 的实现原理和实践方法。
@@ -128,6 +128,23 @@ title: "首页"
       </article>
       <article class="post-card">
         <div class="post-meta">
+          <span class="post-category">技术深度</span>
+          <time class="post-date">2023-07-11</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/daily/flink-keyby-thinking/">Flink KeyBy 数据倾斜问题深度解析与优化实践</a>
+        </h3>
+        <p class="post-excerpt">
+          记录在 Flink 实时数据处理中遇到的 KeyBy 数据倾斜问题，深入分析 Flink KeyGroup 分配机制，并提供了自定义 Key 重平衡的解决方案。
+        </p>
+        <div class="post-tags">
+          <span class="tag">Flink</span>
+          <span class="tag">数据倾斜</span>
+          <span class="tag">实时计算</span>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-meta">
           <span class="post-category">Bug修复</span>
           <time class="post-date">2024-08-17</time>
         </div>
@@ -143,13 +160,13 @@ title: "首页"
           <span class="tag">Bug修复</span>
         </div>
       </article>
-       <article class="post-card">
+      <article class="post-card">
         <div class="post-meta">
           <span class="post-category">故障排查</span>
-          <time class="post-date">2022-03-05</time>
+          <time class="post-date"> 2022-03-05</time>
         </div>
         <h3 class="post-title">
-          <a href="/daily/troubleshooting_of_service_feigned_death/">Java服务假死问题排查实战：从线程堆栈到超时配置</a>
+          <a href="/daily/troubleshooting-of-service-feigned-death/">Java服务假死问题排查实战：从线程堆栈到超时配置</a>
         </h3>
         <p class="post-excerpt">
           记录一次生产环境中Java服务假死问题的完整排查过程，从发现问题到最终解决，涉及K8S监控、线程堆栈分析、网络超时配置等技术要点。
