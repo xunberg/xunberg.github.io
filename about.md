@@ -24,20 +24,33 @@ permalink: /about/
           我是一名拥有十二年软件开发经验的技术专家，专注于 AI Agent、物联网技术和 AI 编程实践的研究与应用。从传统软件开发到现代 AI 辅助编程，我见证并参与了技术变革的每一个关键节点。
         </p>
         <p>
-          在这个快速发展的 AI 时代，我深信"<strong>写代码从来不是瓶颈，代码最大的成本是理解，而不是写出来</strong>"。我致力于探索如何让人工智能更好地与现实世界交互，通过 MCP 协议构建强大的 AI Agent，让它们不仅能够理解和生成文本，还能够控制物理设备、访问实时数据，真正成为我们生活和工作中的智能助手。
+          性格开朗，乐于沟通，喜欢和同事积极交流分享技术心得。在这个快速发展的 AI 时代，我深信"<strong>写代码从来不是瓶颈，代码最大的成本是理解，而不是写出来</strong>"。我致力于探索如何让人工智能更好地与现实世界交互，通过 MCP 协议构建强大的 AI Agent，让它们不仅能够理解和生成文本，还能够控制物理设备、访问实时数据，真正成为我们生活和工作中的智能助手。
         </p>
         <p>
-          最近，我深度实践了 "Vibe Coding" 的开发方式，使用 bolt.new、Claude、Copilot 等 AI 工具完成了一个完整的移液枪自动化调参系统项目。这次经历让我更深刻地理解了 AI 编程的价值和局限性。
+          目前我专注于企业内部大模型 LLM、Agent 的落地应用，以及使用 MCP 协议对边缘设备控制的调研。我使用开源产品构建企业内部的 RAG 和 Agent 平台，深度实践了 "Vibe Coding" 的开发方式，使用 bolt.new、Claude、Copilot 等 AI 工具完成了移液枪自动化调参系统等完整项目。我对 AGI 和 Vibe Coding 充满兴趣，也相信 AGI 的时代终将到来。
         </p>
+        
+        <h3>生活爱好</h3>
+        <p>
+          工作之余，我是一个热爱运动的人，喜欢打篮球、游泳、骑车、撸铁等各种运动，这些运动不仅让我保持身体健康，也让我在紧张的开发工作中找到放松和平衡。
+        </p>
+        <p>
+          我喜欢在 CSDN、掘金等平台分享技术博客，通过写作来整理思路、总结经验，也希望能够帮助到其他开发者。除了技术类书籍，我还喜欢阅读社会心理学相关的书籍，如《大问题》《乌合之众》等，这些阅读帮助我从不同角度理解世界和人性。
+        </p>
+        
         <h3>技术专长</h3>
+        <p>
+          在工作中，我能够独立完成前后端及数据相关的开发任务，技术栈较为全面：
+        </p>
         <ul>
+          <li><strong>编程语言与框架</strong> - .NET、Java、Python、前端 Vue/Element-UI</li>
+          <li><strong>大数据技术</strong> - Flink、Spark、数据湖等技术栈</li>
+          <li><strong>容器化与云平台</strong> - Docker、K8S，熟悉 AWS、腾讯云、阿里云</li>
           <li><strong>AI 编程实践</strong> - 熟练使用 bolt.new、Claude、GitHub Copilot 等 AI 工具进行快速原型开发和全栈应用构建</li>
           <li><strong>MCP (Model Context Protocol)</strong> - 深入理解 MCP 协议标准，具有丰富的服务端开发经验</li>
           <li><strong>Node-RED</strong> - 熟练使用 Node-RED 进行可视化流程编排和物联网应用开发</li>
           <li><strong>AI Agent 开发</strong> - 有经验将 AI 模型与外部工具集成，构建实用的智能应用</li>
-          <li><strong>全栈开发</strong> - React、Node.js、Python、FastAPI 等现代技术栈</li>
-          <li><strong>自动化系统</strong> - 工业设备自动化、数据采集与分析、智能调参系统</li>
-          <li><strong>物联网 (IoT)</strong> - 边缘计算、设备管理和数据采集</li>
+          <li><strong>企业级 AI 平台</strong> - RAG 系统构建、Agent 平台开发、大模型落地应用</li>
         </ul>
         <h3>项目经验</h3>
         <div class="project-list">
