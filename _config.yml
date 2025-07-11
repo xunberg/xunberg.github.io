@@ -7,6 +7,9 @@ url: "https://xunberg.github.io"
 baseurl: ""
 last_updated: "2025-07-10"
 
+# Analytics
+google_analytics: "G-97GP17YFWB"  # 替换为您的 GA4 测量 ID
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

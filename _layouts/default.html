@@ -20,6 +20,18 @@
     
     <!-- SEO -->
     {% seo %}
+    
+    <!-- Google Analytics -->
+    {% if site.google_analytics %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
 </head>
 <body>
     <header class="site-header">
@@ -109,6 +121,9 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- 网站统计 -->
+            {% include busuanzi-stats.html %}
             
             <div class="footer-bottom">
                 <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
