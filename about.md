@@ -20,19 +20,15 @@ permalink: /about/
     <div class="about-content">
       <div class="about-text">
         <h2>Hello! 我是 Xunberg</h2>
-        
         <p>
           我是一名拥有十二年软件开发经验的技术专家，专注于 AI Agent、物联网技术和 AI 编程实践的研究与应用。从传统软件开发到现代 AI 辅助编程，我见证并参与了技术变革的每一个关键节点。
         </p>
-        
         <p>
           在这个快速发展的 AI 时代，我深信"<strong>写代码从来不是瓶颈，代码最大的成本是理解，而不是写出来</strong>"。我致力于探索如何让人工智能更好地与现实世界交互，通过 MCP 协议构建强大的 AI Agent，让它们不仅能够理解和生成文本，还能够控制物理设备、访问实时数据，真正成为我们生活和工作中的智能助手。
         </p>
-        
         <p>
           最近，我深度实践了 "Vibe Coding" 的开发方式，使用 bolt.new、Claude、Copilot 等 AI 工具完成了一个完整的移液枪自动化调参系统项目。这次经历让我更深刻地理解了 AI 编程的价值和局限性。
         </p>
-        
         <h3>技术专长</h3>
         <ul>
           <li><strong>AI 编程实践</strong> - 熟练使用 bolt.new、Claude、GitHub Copilot 等 AI 工具进行快速原型开发和全栈应用构建</li>
@@ -43,7 +39,6 @@ permalink: /about/
           <li><strong>自动化系统</strong> - 工业设备自动化、数据采集与分析、智能调参系统</li>
           <li><strong>物联网 (IoT)</strong> - 边缘计算、设备管理和数据采集</li>
         </ul>
-        
         <h3>项目经验</h3>
         <div class="project-list">
           <div class="project-item">
@@ -53,6 +48,7 @@ permalink: /about/
               项目涵盖了前端界面（bolt.new 生成）、后端 API（Claude 生成）、Agent 规划执行、硬件对接等完整技术栈。
             </p>
             <div class="project-tags">
+              <span class="tag">Vibe Coding</span>
               <span class="tag">bolt.new</span>
               <span class="tag">Claude</span>
               <span class="tag">Copilot</span>
@@ -61,7 +57,6 @@ permalink: /about/
               <span class="tag">自动化</span>
             </div>
           </div>
-          
           <div class="project-item">
             <h4>Node-RED MCP 插件</h4>
             <p>
@@ -77,8 +72,23 @@ permalink: /about/
               </a>
             </div>
           </div>
+          <div class="project-item">
+            <h4>Dify openapi 转 MCP 插件</h4>
+            <p>
+              基于企业内部的需要，部分 API 需要转 MCP 的协议，在 Dify 上使用，开发了相关项目去解决此问题
+            </p>
+             <div class="project-tags">
+              <span class="tag">Dify Plugin</span>
+              <span class="tag">MCP</span>
+              <span class="tag">OpenAPI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/xunberg/dify-plugin-openapi-to-mcp" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
         </div>
-        
         <h3>写作目标</h3>
         <p>
           通过这个博客，我希望能够：

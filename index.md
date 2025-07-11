@@ -126,6 +126,40 @@ title: "首页"
           <span class="tag">集成</span>
         </div>
       </article>
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-category">Bug修复</span>
+          <time class="post-date">2024-08-17</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/daily/fastjson-bytebuffer-bug-fix/">FastJSON ByteBuffer 序列化Bug深度解析与修复</a>
+        </h3>
+        <p class="post-excerpt">
+          记录一次数据同步中遇到的 FastJSON 序列化 ByteBuffer 导致的 Bug，从问题发现到源码分析，最终找到解决方案的完整过程。
+        </p>
+        <div class="post-tags">
+          <span class="tag">FastJSON</span>
+          <span class="tag">ByteBuffer</span>
+          <span class="tag">Bug修复</span>
+        </div>
+      </article>
+       <article class="post-card">
+        <div class="post-meta">
+          <span class="post-category">故障排查</span>
+          <time class="post-date">2022-03-05</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/daily/troubleshooting_of_service_feigned_death/">Java服务假死问题排查实战：从线程堆栈到超时配置</a>
+        </h3>
+        <p class="post-excerpt">
+          记录一次生产环境中Java服务假死问题的完整排查过程，从发现问题到最终解决，涉及K8S监控、线程堆栈分析、网络超时配置等技术要点。
+        </p>
+        <div class="post-tags">
+          <span class="tag">Java</span>
+          <span class="tag">故障排查</span>
+          <span class="tag">K8S</span>
+        </div>
+      </article>
     </div>
   </div>
 </section>

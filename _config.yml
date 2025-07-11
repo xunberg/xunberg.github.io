@@ -2,7 +2,7 @@
 title: "Xunberg's Tech Blog"
 description: "MCP & AI Agent 技术分享"
 author: "Xunberg"
-email: "your-email@example.com"
+email: "burgxun@163.com"
 url: "https://xunberg.github.io"
 baseurl: ""
 last_updated: "2025-07-10"
@@ -32,6 +32,8 @@ navigation:
     url: "/mcp/"
   - title: "AI 编程"
     url: "/agent/"
+  - title: "日常分享"
+    url: "/daily/"
   - title: "关于"
     url: "/about/"
 
@@ -51,6 +53,9 @@ collections:
   agent:
     output: true
     permalink: /agent/:name/
+  daily:
+    output: true
+    permalink: /daily/:name/
 
 # Defaults
 defaults:
@@ -67,5 +72,10 @@ defaults:
   - scope:
       path: ""
       type: "agent"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "daily"
     values:
       layout: "post"  
