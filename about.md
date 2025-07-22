@@ -27,7 +27,7 @@ permalink: /about/
           性格开朗，乐于沟通，喜欢和同事积极交流分享技术心得。在这个快速发展的 AI 时代，我深信"<strong>写代码从来不是瓶颈，代码最大的成本是理解，而不是写出来</strong>"。我致力于探索如何让人工智能更好地与现实世界交互，通过 MCP 协议构建强大的 AI Agent，让它们不仅能够理解和生成文本，还能够控制物理设备、访问实时数据，真正成为我们生活和工作中的智能助手。
         </p>
         <p>
-          目前我专注于企业内部大模型 LLM、Agent 的落地应用，以及使用 MCP 协议对边缘设备控制的调研。我使用开源产品构建企业内部的 RAG 和 Agent 平台，深度实践了 "Vibe Coding" 的开发方式，使用 bolt.new、Claude、Copilot 等 AI 工具完成了移液枪自动化调参系统等完整项目。我对 AGI 和 Vibe Coding 充满兴趣，也相信 AGI 的时代终将到来。
+          目前我专注于企业内部大模型 LLM、Agent 的落地应用，以及使用 MCP 协议对边缘设备控制的调研。我使用开源产品构建企业内部的 LLM 和 Agent 平台，深度实践了 "Vibe Coding" 的开发方式，使用 bolt.new、Claude、Copilot 等 AI 工具完成了移液枪自动化调参系统等完整项目。我对 AGI 和 Vibe Coding 充满兴趣，也相信 AGI 的时代终将到来。
         </p>
         
         <h3>生活爱好</h3>
@@ -50,7 +50,7 @@ permalink: /about/
           <li><strong>MCP (Model Context Protocol)</strong> - 深入理解 MCP 协议标准，具有丰富的服务端开发经验</li>
           <li><strong>Node-RED</strong> - 熟练使用 Node-RED 进行可视化流程编排和物联网应用开发</li>
           <li><strong>AI Agent 开发</strong> - 有经验将 AI 模型与外部工具集成，构建实用的智能应用</li>
-          <li><strong>企业级 AI 平台</strong> - RAG 系统构建、Agent 平台开发、大模型落地应用</li>
+          <li><strong>企业级 AI 平台</strong> - LLM 系统构建、Agent 平台开发、大模型落地应用</li>
         </ul>
         <h3>项目经验</h3>
         <div class="project-list">

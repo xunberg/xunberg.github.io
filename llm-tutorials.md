@@ -1,26 +1,26 @@
 ---
 layout: default
-title: "Agent实践"
-permalink: /agent/
+title: "LLM 技术"
+permalink: /llm/
 ---
 
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">
-      <span class="gradient-text">Agent实践</span>
+      <span class="gradient-text">LLM 技术</span>
     </h1>
     <p class="hero-subtitle">
-      探索 AI 辅助编程的实战经验和技术分享
+      大语言模型技术的深度探索与实践
     </p>
   </div>
 </div>
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title">实践案例</h2>
+    <h2 class="section-title">技术分享</h2>
     
     <div class="posts-grid">
-      {% for post in site.agent %}
+      {% for post in site.llm %}
       <article class="post-card">
         <div class="post-meta">
           {% if post.category %}
@@ -51,13 +51,31 @@ permalink: /agent/
       </article>
       {% endfor %}
     </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">关于 LLM</h2>
     
-    {% if site.agent.size == 0 %}
-    <div class="empty-state">
-      <div class="empty-icon">🚀</div>
-      <h3>内容即将上线</h3>
-      <p>Agent相关的内容正在准备中，敬请期待！</p>
+    <div class="about-grid">
+      <div class="about-item">
+        <div class="about-icon">🧠</div>
+        <h3>大语言模型</h3>
+        <p>深入探索 LLM 的部署、优化和推理技术，包括 vLLM、Transformers 等框架的使用心得。</p>
+      </div>
+      
+      <div class="about-item">
+        <div class="about-icon">⚡</div>
+        <h3>性能优化</h3>
+        <p>从显存管理到并发处理，分享大模型部署和推理过程中的性能调优经验和最佳实践。</p>
+      </div>
+      
+      <div class="about-item">
+        <div class="about-icon">🚀</div>
+        <h3>应用实践</h3>
+        <p>记录 LLM 在实际项目中的应用经验，包括模型选择、部署方案和效果评估等实战分享。</p>
+      </div>
     </div>
-    {% endif %}
   </div>
 </section>

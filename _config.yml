@@ -33,8 +33,10 @@ navigation:
     url: "/"
   - title: "MCP 教程"
     url: "/mcp/"
-  - title: "AI 编程"
+  - title: "Agent 技术"
     url: "/agent/"
+  - title: "LLM"
+    url: "/llm/"
   - title: "日常分享"
     url: "/daily/"
   - title: "关于"
@@ -56,6 +58,9 @@ collections:
   agent:
     output: true
     permalink: /agent/:name/
+  llm:
+    output: true
+    permalink: /llm/:name/
   daily:
     output: true
     permalink: /daily/:name/
@@ -75,6 +80,11 @@ defaults:
   - scope:
       path: ""
       type: "agent"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "llm"
     values:
       layout: "post"
   - scope:

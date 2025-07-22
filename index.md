@@ -9,7 +9,7 @@ title: "首页"
       <span class="gradient-text">Xunberg's Tech Blog</span>
     </h1>
     <p class="hero-subtitle">
-      专注于 MCP (Model Context Protocol) 和 AI Agent 技术分享
+      专注于 MCP、AI Agent、LLM 技术分享
     </p>
     <div class="hero-buttons">
       <a href="/mcp/" class="btn btn-primary">开始阅读</a>
@@ -23,14 +23,32 @@ title: "首页"
     <h2 class="section-title">最新文章</h2>
       <article class="post-card">
         <div class="post-meta">
+          <span class="post-category">LLM</span>
+          <time class="post-date">2025-07-22</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/llm/use_vLLM/">驾驭 vLLM 大模型推理：一次关于并发、长度与显存的探索之旅</a>
+        </h3>
+        <p class="post-excerpt">
+          深入探索 vLLM 推理框架的核心参数配置，包括 max-num-batched-tokens、max-num-seqs、max-model-len 和 gpu-memory-utilization 的原理和调优策略。
+        </p>
+        <div class="post-tags">
+          <span class="tag">vLLM</span>
+          <span class="tag">大语言模型</span>
+          <span class="tag">推理优化</span>
+          <span class="tag">显存管理</span>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-meta">
           <span class="post-category">AI编程</span>
           <time class="post-date">2025-07-06</time>
         </div>
         <h3 class="post-title">
-          <a href="/agent/vibe-coding/">AI 编程实战：用 Vibe Coding 方式开发移液枪自动化调参系统</a>
+          <a href="/agent/vibe-coding/">Agent实战：用 Vibe Coding 方式开发移液枪自动化调参系统</a>
         </h3>
         <p class="post-excerpt">
-          记录一次完整的 AI 编程实践，从草图到 V1.0，体验 bolt.new + Claude + Copilot 的开发流程。
+          记录一次使用AI编程去完整的实现一个Agent实践，从草图到 V1.0，体验 bolt.new + Claude + Copilot 的开发流程。
         </p>
         <div class="post-tags">
           <span class="tag">AI编程</span>
