@@ -24,6 +24,24 @@ title: "首页"
       <article class="post-card">
         <div class="post-meta">
           <span class="post-category">LLM</span>
+          <time class="post-date">2025-09-20</time>
+        </div>
+        <h3 class="post-title">
+          <a href="/llm/use_es_hnsw/">从 RAG 检索效率瓶颈，到 HNSW 算法的深度解密</a>
+        </h3>
+        <p class="post-excerpt">
+          深入探索 Elasticsearch 中 HNSW 算法的核心原理，从 RAG 检索效率瓶颈出发，详解分层导航小世界网络的构建与查询机制。
+        </p>
+        <div class="post-tags">
+          <span class="tag">HNSW</span>
+          <span class="tag">Elasticsearch</span>
+          <span class="tag">向量检索</span>
+          <span class="tag">RAG</span>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-category">LLM</span>
           <time class="post-date">2025-07-22</time>
         </div>
         <h3 class="post-title">
