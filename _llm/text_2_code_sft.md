@@ -1,11 +1,4 @@
-eval_fraction = 0.1
-
-
-# 从 Action 描述到 Command 的小模型 SFT 全流程实战
-
-> 背景：最近在公司 Agent 项目中负责“实验操作描述 → 机器人命令”指令转化能力的调研与落地。这篇文章记录了我如何把 Qwen3-4B-Instruct 打造成稳定的指令模型，涵盖数据分析、LoRA 训练、推理上线以及踩坑复盘，目标是让具备基础 PyTorch / Hugging Face 经验的同学能够在两天内复现。
-
-
+---
 layout: post
 title: "从 Action 描述到 Command 的小模型 SFT 全流程实战"
 date: 2025-10-09
@@ -15,6 +8,15 @@ excerpt: "记录如何将 Qwen3-4B-Instruct 打造成稳定的指令模型，涵
 author: "Xunberg"
 permalink: /llm/text_2_code_sft/
 ---
+
+```python
+eval_fraction = 0.1
+```
+
+# 从 Action 描述到 Command 的小模型 SFT 全流程实战
+
+> 背景：最近在公司 Agent 项目中负责“实验操作描述 → 机器人命令”指令转化能力的调研与落地。这篇文章记录了我如何把 Qwen3-4B-Instruct 打造成稳定的指令模型，涵盖数据分析、LoRA 训练、推理上线以及踩坑复盘，目标是让具备基础 PyTorch / Hugging Face 经验的同学能够在两天内复现。
+
 ## 1. 项目动机与目标
 
 - **业务诉求**：Agent 需要把实验 SOP 文本（action desc）转换为机器人控制命令（command）。命令格式严格，任何自然语言噪声都会让机器人拒绝执行。
