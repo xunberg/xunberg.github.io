@@ -21,6 +21,27 @@ title: "首页"
 <section id="latest-posts" class="section">
   <div class="container">
     <h2 class="section-title">最新文章</h2>
+        <article class="post-card">
+          <div class="post-meta">
+            <span class="post-category">LLM</span>
+            <time class="post-date">2025-10-09</time>
+          </div>
+          <h3 class="post-title">
+            <a href="/llm/text_2_code_sft/">从 Action 描述到 Command 的小模型 SFT 全流程实战</a>
+          </h3>
+          <p class="post-excerpt">
+            记录如何将 Qwen3-4B-Instruct 打造成稳定的指令模型，涵盖数据分析、LoRA 训练、推理上线与踩坑复盘，适合有基础的 AI 工程师快速复现。
+          </p>
+          <div class="post-tags">
+            <span class="tag">SFT</span>
+            <span class="tag">Qwen3-4B-Instruct</span>
+            <span class="tag">LoRA</span>
+            <span class="tag">指令模型</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Agent</span>
+          </div>
+        </article>
       <article class="post-card">
         <div class="post-meta">
           <span class="post-category">LLM</span>
