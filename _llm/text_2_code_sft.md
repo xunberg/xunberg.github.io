@@ -9,10 +9,6 @@ author: "Xunberg"
 permalink: /llm/text_2_code_sft/
 ---
 
-```python
-eval_fraction = 0.1
-```
-
 # 从 Action 描述到 Command 的小模型 SFT 全流程实战
 
 > 背景：最近在公司 Agent 项目中负责“实验操作描述 → 机器人命令”指令转化能力的调研与落地。这篇文章记录了我如何把 Qwen3-4B-Instruct 打造成稳定的指令模型，涵盖数据分析、LoRA 训练、推理上线以及踩坑复盘，目标是让具备基础 PyTorch / Hugging Face 经验的同学能够在两天内复现。
@@ -80,13 +76,27 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "5"
 核心 Prompt 指南如下：
 
 ```python
+SPECIAL_EOC_TOKEN = "<eoc>"
 PROMPT_GUIDELINES = (
-    "You must respond using robot command syntax only.\n"
-    "- Output one command per line.\n"
-    "- Do not add explanations, natural language, or metadata.\n"
-    "- Finish the sequence immediately after the final command.\n"
-    "- Terminate the entire response with the token <eoc>."
-)
+    "请仅返回一个符合 {\"commands\": [...]} 模式的 JSON 对象：\n"
+    "- \"func_name\"：字符串，表示机器人指令名称；\n"
+    "- \"func_parameters\"：对象，包含所有命名参数及其字面量。\n"
+    "- 字段名必须与语料中出现的命名完全一致（如 labware、wells、channels、vols、times 等），禁止拼写错误或新增字段。\n"
+    "- wells、channels、vols 无论元素个数都必须以数组表示（例如单元素写作 [1] 而非 1）。\n"
+    "禁止输出自然语言、注释或额外说明。\n"
+    "JSON 末尾必须紧跟终止符 <eoc>，不得再追加其他文本。"
+ )
+CHAT_SYSTEM_PROMPT = (
+    "你是一名实验室自动化助手，负责将操作描述转换为机器人可执行的命令列表。\n"
+    "请始终返回有效的 JSON，并禁止输出 <tool_call>、<tool_response> 等额外控制符或解释。"
+ )
+AUGMENTATION_TEMPLATES = [
+    "{instruction}",
+    "请严格按照下述操作生成命令：{instruction}",
+    "依据流程描述输出机器人命令：{instruction}",
+    "操作说明如下：{instruction}\n给出命令列表：",
+ ]
+
 ```
 
 ### 3.3 数据增强：模板 + 指令变体
