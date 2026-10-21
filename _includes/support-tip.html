@@ -1,0 +1,64 @@
+{% assign s = site.support %}
+{% if s and s.enabled %}
+<section class="support-tip{% if include.variant %} support-tip--{{ include.variant }}{% endif %}" aria-labelledby="support-tip-heading">
+  <div class="support-tip__inner">
+    <header class="support-tip__header">
+      <span class="support-tip__icon" aria-hidden="true"><i class="fas fa-mug-hot"></i></span>
+      <div>
+        <h2 id="support-tip-heading" class="support-tip__title">{{ s.title | default: "支持作者" }}</h2>
+        <p class="support-tip__intro">{{ s.intro | default: "如果文章对你有帮助，欢迎自愿打赏，请我喝杯咖啡。" }}</p>
+      </div>
+    </header>
+
+    <div class="support-tip__codes">
+      {% if s.wechat and s.wechat.image %}
+      <figure class="support-qr support-qr--wechat">
+        <div class="support-qr__frame">
+          <img
+            src="{{ s.wechat.image | relative_url }}"
+            alt="{{ s.wechat.label | default: '微信' }}收款码"
+            width="280"
+            height="280"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <figcaption class="support-qr__label">
+          <i class="fab fa-weixin" aria-hidden="true"></i>
+          {{ s.wechat.label | default: "微信" }}
+        </figcaption>
+      </figure>
+      {% endif %}
+
+      {% if s.alipay and s.alipay.image %}
+      <figure class="support-qr support-qr--alipay">
+        <div class="support-qr__frame">
+          <img
+            src="{{ s.alipay.image | relative_url }}"
+            alt="{{ s.alipay.label | default: '支付宝' }}收款码"
+            width="280"
+            height="280"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <figcaption class="support-qr__label">
+          <i class="fab fa-alipay" aria-hidden="true"></i>
+          {{ s.alipay.label | default: "支付宝" }}
+        </figcaption>
+      </figure>
+      {% endif %}
+    </div>
+
+    {% if s.note %}
+    <p class="support-tip__note">{{ s.note }}</p>
+    {% endif %}
+
+    {% if include.variant == 'compact' and s.page_url %}
+    <p class="support-tip__more">
+      <a href="{{ s.page_url | relative_url }}">查看大图与说明 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </p>
+    {% endif %}
+  </div>
+</section>
+{% endif %}

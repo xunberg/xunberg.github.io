@@ -41,6 +41,23 @@ navigation:
     url: "/daily/"
   - title: "关于"
     url: "/about/"
+  - title: "支持作者"
+    url: "/support/"
+
+# 打赏 / 支持作者（收款码图片见 assets/images/support/）
+support:
+  enabled: true
+  title: "支持作者"
+  intro: "如果这篇文章对你有帮助，欢迎自愿打赏，请我喝杯咖啡。"
+  page_url: "/support/"
+  show_on_posts: true
+  wechat:
+    label: "微信"
+    image: "/assets/images/support/wechat-pay.jpg"
+  alipay:
+    label: "支付宝"
+    image: "/assets/images/support/alipay.jpg"
+  note: "打赏纯属自愿，金额随意。感谢你的阅读与支持！"
 
 # Social links
 social:
