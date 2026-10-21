@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+<rect width="760" height="520" fill="#ffffff"/>
+<text x="90" y="38" font-size="16" font-weight="600" fill="#16222e">日均调用量 vs 日 GPU 消耗（以 RFDiffusion 为例）</text>
+<rect x="90" y="70" width="630" height="370" fill="#ffffff"/>
+<line x1="90" y1="440.0" x2="720" y2="440.0" stroke="#e3e8ee" stroke-width="1"/><text x="80" y="444.0" text-anchor="end" font-size="12" fill="#64748b">0</text><line x1="90" y1="378.3" x2="720" y2="378.3" stroke="#e3e8ee" stroke-width="1"/><text x="80" y="382.3" text-anchor="end" font-size="12" fill="#64748b">10</text><line x1="90" y1="316.7" x2="720" y2="316.7" stroke="#e3e8ee" stroke-width="1"/><text x="80" y="320.7" text-anchor="end" font-size="12" fill="#64748b">20</text><line x1="90" y1="255.0" x2="720" y2="255.0" stroke="#e3e8ee" stroke-width="1"/><text x="80" y="259.0" text-anchor="end" font-size="12" fill="#64748b">30</text><line x1="90" y1="193.3" x2="720" y2="193.3" stroke="#e3e8ee" stroke-width="1"/><text x="80" y="197.3" text-anchor="end" font-size="12" fill="#64748b">40</text><line x1="90" y1="131.7" x2="720" y2="131.7" stroke="#e3e8ee" stroke-width="1"/><text x="80" y="135.7" text-anchor="end" font-size="12" fill="#64748b">50</text><line x1="90" y1="70.0" x2="720" y2="70.0" stroke="#e3e8ee" stroke-width="1"/><text x="80" y="74.0" text-anchor="end" font-size="12" fill="#64748b">60</text><text x="90.0" y="460" text-anchor="middle" font-size="12" fill="#64748b">0</text><text x="168.8" y="460" text-anchor="middle" font-size="12" fill="#64748b">25</text><text x="247.5" y="460" text-anchor="middle" font-size="12" fill="#64748b">50</text><text x="326.2" y="460" text-anchor="middle" font-size="12" fill="#64748b">75</text><text x="405.0" y="460" text-anchor="middle" font-size="12" fill="#64748b">100</text><text x="483.8" y="460" text-anchor="middle" font-size="12" fill="#64748b">125</text><text x="562.5" y="460" text-anchor="middle" font-size="12" fill="#64748b">150</text><text x="641.2" y="460" text-anchor="middle" font-size="12" fill="#64748b">175</text><text x="720.0" y="460" text-anchor="middle" font-size="12" fill="#64748b">200</text>
+<line x1="90" y1="440" x2="720" y2="440" stroke="#64748b" stroke-width="1.5"/>
+<line x1="90" y1="70" x2="90" y2="440" stroke="#64748b" stroke-width="1.5"/>
+<polyline points="90.0,440.0 153.0,405.5 247.5,353.7 405.0,267.3 562.5,181.0 720.0,94.7" fill="none" stroke="#2f6f9f" stroke-width="3"/>
+<line x1="90.0" y1="292.0" x2="720.0" y2="292.0" stroke="#d2543f" stroke-width="3"/>
+<circle cx="360.0" cy="292.0" r="5" fill="#d2543f"/>
+<line x1="360.0" y1="292.0" x2="360.0" y2="440" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="368.0" y="282.0" font-size="13" fill="#16222e">交叉点 ≈ 86 次/天</text>
+<text x="714" y="84.7" text-anchor="end" font-size="13" fill="#2f6f9f">缩到零：N × (t + c)</text>
+<text x="714" y="282.0" text-anchor="end" font-size="13" fill="#d2543f">常驻 1 副本：固定 24h</text>
+<text x="405.0" y="498" text-anchor="middle" font-size="13" fill="#64748b">日均调用次数 N</text>
+<text x="22" y="255.0" font-size="13" fill="#64748b" transform="rotate(-90 22 255.0)" text-anchor="middle">日 GPU 消耗（GPU·小时）</text>
+</svg>
