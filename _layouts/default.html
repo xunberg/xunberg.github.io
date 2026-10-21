@@ -38,7 +38,8 @@
                 <div class="navbar-brand">
                     <a href="{{ '/' | relative_url }}">
                         <span class="brand-icon">🚀</span>
-                        <span class="brand-text">{{ site.title }}</span>
+                        <span class="brand-text brand-text--short">Xunberg</span>
+                        <span class="brand-text brand-text--long">{{ site.title }}</span>
                     </a>
                 </div>
                 
@@ -95,6 +96,9 @@
                         {% for item in site.navigation %}
                         <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
                         {% endfor %}
+                        {% if site.support.enabled %}
+                        <li><a href="{{ '/support/' | relative_url }}">支持作者</a></li>
+                        {% endif %}
                     </ul>
                 </div>
                 

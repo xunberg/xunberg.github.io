@@ -49,10 +49,8 @@ navigation:
     url: "/daily/"
   - title: "关于"
     url: "/about/"
-  - title: "支持作者"
-    url: "/support/"
 
-# 打赏 / 支持作者（收款码图片见 assets/images/support/）
+# 打赏 / 支持作者（入口：文章侧栏、页脚、/support/）（收款码图片见 assets/images/support/）
 support:
   enabled: true
   title: "支持作者"

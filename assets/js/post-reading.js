@@ -135,6 +135,36 @@
     });
   }
 
+  function initQrLightbox() {
+    const lightbox = document.getElementById('support-qr-lightbox');
+    const img = document.getElementById('support-qr-lightbox-img');
+    const caption = document.getElementById('qr-lightbox-caption');
+    const closeBtn = document.getElementById('support-qr-lightbox-close');
+    if (!lightbox || !img) return;
+
+    const open = (src, label) => {
+      img.src = src;
+      img.alt = label;
+      if (caption) caption.textContent = label;
+      if (typeof lightbox.showModal === 'function') {
+        lightbox.showModal();
+      }
+    };
+
+    document.querySelectorAll('.js-qr-zoom').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-qr-src');
+        const label = btn.getAttribute('data-qr-label') || '收款码';
+        if (src) open(src, label);
+      });
+    });
+
+    closeBtn?.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) lightbox.close();
+    });
+  }
+
   function initSupportDialog() {
     const fab = document.getElementById('support-fab');
     const dialog = document.getElementById('support-dialog');
@@ -163,5 +193,6 @@
     initReadingProgress();
     initAnchorScroll();
     initSupportDialog();
+    initQrLightbox();
   });
 })();
