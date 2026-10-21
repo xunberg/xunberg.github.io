@@ -18,6 +18,8 @@ last_updated: "2026-10-21"
 google_analytics: "G-97GP17YFWB"  # 替换为您的 GA4 测量 ID
 
 # Build settings
+exclude:
+  - draft
 markdown: kramdown
 highlighter: rouge
 theme: jekyll-theme-minimal
