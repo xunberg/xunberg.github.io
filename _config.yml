@@ -53,10 +53,10 @@ support:
   show_on_posts: true
   wechat:
     label: "微信"
-    image: "/assets/images/support/wechat-pay.svg"
+    image: "/assets/images/support/wechat-pay.jpg"
   alipay:
     label: "支付宝"
-    image: "/assets/images/support/alipay.svg"
+    image: "/assets/images/support/alipay.jpg"
   note: "打赏纯属自愿，金额随意。感谢你的阅读与支持！"
 
 # Social links

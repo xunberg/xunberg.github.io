@@ -6,11 +6,11 @@
 
 - 格式：PNG 或 JPG（推荐 PNG，背景干净）
 - 尺寸：正方形，边长 **400–800 px**（页面会自动缩放）
-- 文件名（默认配置）：
-  - `wechat-pay.png` — 微信收款码
-  - `alipay.png` — 支付宝收款码
+- 当前使用：
+  - `wechat-pay.jpg` — 微信收款码
+  - `alipay.jpg` — 支付宝收款码
 
-替换占位 SVG 后，在 `_config.yml` 中把 `image` 改为对应 `.png` 路径即可。
+更换收款码时覆盖上述文件，或新增文件并在 `_config.yml` 的 `support.wechat.image` / `support.alipay.image` 中更新路径。
 
 ## 安全提示
 
