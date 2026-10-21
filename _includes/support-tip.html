@@ -9,21 +9,26 @@
       <span class="support-rail__icon" aria-hidden="true"><i class="fas fa-mug-hot"></i></span>
       <h2 id="support-rail-heading" class="support-rail__title">{{ s.title | default: "支持作者" }}</h2>
     </header>
-    <p class="support-rail__intro">{{ s.sidebar_intro | default: "有帮助？扫码请我喝杯咖啡" }}</p>
+    <p class="support-rail__intro">{{ s.sidebar_intro | default: "有帮助？扫码支持" }}</p>
+    <p class="support-rail__hint">点击二维码放大</p>
     <div class="support-rail__codes">
       {% if s.wechat and s.wechat.image %}
       <figure class="support-rail__qr support-rail__qr--wechat">
-        <div class="support-rail__qr-frame">
-          <img src="{{ s.wechat.image | relative_url }}" alt="{{ s.wechat.label | default: '微信' }}收款码" width="120" height="120" loading="lazy" decoding="async" />
-        </div>
+        <button type="button" class="support-rail__qr-btn js-qr-zoom" data-qr-src="{{ s.wechat.image | relative_url }}" data-qr-label="{{ s.wechat.label | default: '微信' }}收款码" aria-label="放大{{ s.wechat.label | default: '微信' }}收款码">
+          <span class="support-rail__qr-frame">
+            <img src="{{ s.wechat.image | relative_url }}" alt="" width="140" height="140" loading="lazy" decoding="async" />
+          </span>
+        </button>
         <figcaption><i class="fab fa-weixin" aria-hidden="true"></i> {{ s.wechat.label | default: "微信" }}</figcaption>
       </figure>
       {% endif %}
       {% if s.alipay and s.alipay.image %}
       <figure class="support-rail__qr support-rail__qr--alipay">
-        <div class="support-rail__qr-frame">
-          <img src="{{ s.alipay.image | relative_url }}" alt="{{ s.alipay.label | default: '支付宝' }}收款码" width="120" height="120" loading="lazy" decoding="async" />
-        </div>
+        <button type="button" class="support-rail__qr-btn js-qr-zoom" data-qr-src="{{ s.alipay.image | relative_url }}" data-qr-label="{{ s.alipay.label | default: '支付宝' }}收款码" aria-label="放大{{ s.alipay.label | default: '支付宝' }}收款码">
+          <span class="support-rail__qr-frame">
+            <img src="{{ s.alipay.image | relative_url }}" alt="" width="140" height="140" loading="lazy" decoding="async" />
+          </span>
+        </button>
         <figcaption><i class="fab fa-alipay" aria-hidden="true"></i> {{ s.alipay.label | default: "支付宝" }}</figcaption>
       </figure>
       {% endif %}
@@ -42,20 +47,24 @@
     <h2 id="support-dialog-title" class="support-dialog__title">{{ s.title | default: "支持作者" }}</h2>
     <p class="support-dialog__intro">{{ s.intro | default: "如果文章对你有帮助，欢迎自愿打赏。" }}</p>
   </header>
-  <div class="support-dialog__codes">
+  <div class="support-dialog__codes support-dialog__codes--stack">
     {% if s.wechat and s.wechat.image %}
     <figure class="support-dialog__qr">
-      <div class="support-dialog__qr-frame">
-        <img src="{{ s.wechat.image | relative_url }}" alt="{{ s.wechat.label | default: '微信' }}收款码" width="200" height="200" loading="lazy" />
-      </div>
+      <button type="button" class="support-dialog__qr-btn js-qr-zoom" data-qr-src="{{ s.wechat.image | relative_url }}" data-qr-label="{{ s.wechat.label | default: '微信' }}收款码">
+        <span class="support-dialog__qr-frame">
+          <img src="{{ s.wechat.image | relative_url }}" alt="" width="200" height="200" loading="lazy" />
+        </span>
+      </button>
       <figcaption><i class="fab fa-weixin"></i> {{ s.wechat.label | default: "微信" }}</figcaption>
     </figure>
     {% endif %}
     {% if s.alipay and s.alipay.image %}
     <figure class="support-dialog__qr">
-      <div class="support-dialog__qr-frame">
-        <img src="{{ s.alipay.image | relative_url }}" alt="{{ s.alipay.label | default: '支付宝' }}收款码" width="200" height="200" loading="lazy" />
-      </div>
+      <button type="button" class="support-dialog__qr-btn js-qr-zoom" data-qr-src="{{ s.alipay.image | relative_url }}" data-qr-label="{{ s.alipay.label | default: '支付宝' }}收款码">
+        <span class="support-dialog__qr-frame">
+          <img src="{{ s.alipay.image | relative_url }}" alt="" width="200" height="200" loading="lazy" />
+        </span>
+      </button>
       <figcaption><i class="fab fa-alipay"></i> {{ s.alipay.label | default: "支付宝" }}</figcaption>
     </figure>
     {% endif %}

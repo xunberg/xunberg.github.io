@@ -6,7 +6,7 @@ layout: default
 
 <article class="post">
     <header class="post-header">
-        <div class="container container--narrow">
+        <div class="container container--article">
             {% include post-breadcrumb.html %}
             <div class="post-meta">
                 {% if page.category %}
@@ -29,14 +29,6 @@ layout: default
             {% if page.excerpt %}
             <p class="post-excerpt">{{ page.excerpt }}</p>
             {% endif %}
-            
-            {% if page.tags %}
-            <div class="post-tags">
-                {% for tag in page.tags %}
-                <span class="tag">{{ tag }}</span>
-                {% endfor %}
-            </div>
-            {% endif %}
         </div>
     </header>
 
@@ -53,6 +45,13 @@ layout: default
             </aside>
             <div class="post-article" id="post-article">
                 {{ content }}
+                {% if page.tags %}
+                <footer class="post-tags post-tags--footer">
+                    {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </footer>
+                {% endif %}
             </div>
             {% if site.support.enabled and site.support.show_on_posts and page.support != false %}
             <div class="post-support-rail" aria-hidden="false">
@@ -67,7 +66,7 @@ layout: default
     {% endif %}
 
     <footer class="post-footer">
-        <div class="container container--narrow">
+        <div class="container container--article">
             {% include post-series-nav.html %}
             <div class="post-navigation">
                 {% if page.previous %}
