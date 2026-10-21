@@ -1,0 +1,53 @@
+{% if page.series %}
+{% assign from_mcp = site.mcp | where: "series", page.series %}
+{% assign from_agent = site.agent | where: "series", page.series %}
+{% assign from_llm = site.llm | where: "series", page.series %}
+{% assign from_daily = site.daily | where: "series", page.series %}
+{% assign series_posts = from_mcp | concat: from_agent | concat: from_llm | concat: from_daily | sort: "date" %}
+{% assign series_meta = site.data.series[page.series] %}
+
+{% assign prev_in_series = nil %}
+{% assign next_in_series = nil %}
+{% assign found_current = false %}
+{% for article in series_posts %}
+  {% if found_current %}
+    {% assign next_in_series = article %}
+    {% break %}
+  {% endif %}
+  {% if article.url == page.url %}
+    {% assign found_current = true %}
+  {% else %}
+    {% assign prev_in_series = article %}
+  {% endif %}
+{% endfor %}
+
+{% if series_posts.size > 0 %}
+<section class="series-nav" aria-label="系列导航">
+  <div class="series-nav__head">
+    <span class="series-nav__label">系列</span>
+    {% if series_meta %}
+    <a class="series-nav__series-title" href="{{ series_meta.permalink | relative_url }}">{{ series_meta.title }}</a>
+    {% else %}
+    <span class="series-nav__series-title">{{ page.series }}</span>
+    {% endif %}
+  </div>
+  <div class="series-nav__links">
+    {% if prev_in_series %}
+    <a class="series-nav__link series-nav__link--prev" href="{{ prev_in_series.url | relative_url }}">
+      <span class="series-nav__hint">上一篇</span>
+      <span class="series-nav__title">{{ prev_in_series.title }}</span>
+    </a>
+    {% endif %}
+    {% if next_in_series %}
+    <a class="series-nav__link series-nav__link--next" href="{{ next_in_series.url | relative_url }}">
+      <span class="series-nav__hint">下一篇</span>
+      <span class="series-nav__title">{{ next_in_series.title }}</span>
+    </a>
+    {% endif %}
+    {% if prev_in_series == nil and next_in_series == nil and series_posts.size == 1 %}
+    <p class="series-nav__solo">本系列更多章节撰写中，欢迎稍后回来看更新。</p>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+{% endif %}

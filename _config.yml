@@ -27,6 +27,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   math_engine: mathjax
+  auto_ids: true
   
 # Plugins (GitHub Pages 支持的插件)
 plugins:
@@ -79,15 +80,23 @@ collections:
   mcp:
     output: true
     permalink: /mcp/:name/
+    sort_by: date
+    sort_order: descending
   agent:
     output: true
     permalink: /agent/:name/
+    sort_by: date
+    sort_order: descending
   llm:
     output: true
     permalink: /llm/:name/
+    sort_by: date
+    sort_order: descending
   daily:
     output: true
     permalink: /daily/:name/
+    sort_by: date
+    sort_order: descending
 
 # Defaults
 defaults:
