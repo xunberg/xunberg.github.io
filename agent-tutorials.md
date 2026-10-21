@@ -1,19 +1,41 @@
 ---
 layout: default
-title: "Agent实践"
+title: "Agent 技术"
+description: "AI Agent 实战：Vibe Coding、生命科学 Agent 系列、LLM 编排与企业落地案例与教程。"
 permalink: /agent/
 ---
 
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">
-      <span class="gradient-text">Agent实践</span>
+      <span class="gradient-text">Agent 技术</span>
     </h1>
     <p class="hero-subtitle">
-      探索 AI 辅助编程的实战经验和技术分享
+      AI Agent 实战与工程化：从 Vibe Coding 到生命科学场景落地
     </p>
   </div>
 </div>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">进行中的系列</h2>
+    {% assign ls = site.data.series.life-science-agent %}
+    <article class="post-card series-highlight">
+      <div class="post-meta">
+        <span class="post-category">{{ ls.status }}</span>
+      </div>
+      <h3 class="post-title">
+        <a href="{{ ls.permalink | relative_url }}">{{ ls.title }}</a>
+      </h3>
+      <p class="post-excerpt">{{ ls.summary }}</p>
+      <div class="post-tags">
+        {% for kw in ls.keywords %}
+        <span class="tag">{{ kw }}</span>
+        {% endfor %}
+      </div>
+    </article>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">

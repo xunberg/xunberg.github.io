@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "LLM 技术"
+description: "大语言模型工程实践：vLLM 推理调优、RAG/HNSW 向量检索、小模型 SFT 与指令微调实战。"
 permalink: /llm/
 ---
 

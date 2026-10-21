@@ -1,0 +1,51 @@
+{% assign crumb_name = page.title | default: page.name %}
+{% assign section_url = page.url | split: '/' | slice: 0, 2 | join: '/' | append: '/' %}
+{% if page.collection %}
+  {% case page.collection %}
+    {% when 'mcp' %}
+      {% assign section_name = 'MCP 教程' %}
+      {% assign section_url = '/mcp/' %}
+    {% when 'agent' %}
+      {% assign section_name = 'Agent 技术' %}
+      {% assign section_url = '/agent/' %}
+    {% when 'llm' %}
+      {% assign section_name = 'LLM' %}
+      {% assign section_url = '/llm/' %}
+    {% when 'daily' %}
+      {% assign section_name = '日常分享' %}
+      {% assign section_url = '/daily/' %}
+    {% else %}
+      {% assign section_name = site.title %}
+      {% assign section_url = '/' %}
+  {% endcase %}
+{% else %}
+  {% assign section_name = site.title %}
+  {% assign section_url = '/' %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": {{ site.url | append: site.baseurl | append: '/' | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ section_name | jsonify }},
+      "item": {{ site.url | append: site.baseurl | append: section_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ crumb_name | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }
+  ]
+}
+</script>

@@ -1,0 +1,39 @@
+{% assign mcp_posts = site.mcp | where_exp: 'item', 'item.published != false' %}
+{% assign agent_posts = site.agent | where_exp: 'item', 'item.published != false' %}
+{% assign llm_posts = site.llm | where_exp: 'item', 'item.published != false' %}
+{% assign daily_posts = site.daily | where_exp: 'item', 'item.published != false' %}
+{% assign all_posts = mcp_posts | concat: agent_posts | concat: llm_posts | concat: daily_posts | sort: 'date' | reverse %}
+{% assign post_limit = include.limit | default: 12 %}
+
+<div class="posts-grid">
+  {% for post in all_posts limit: post_limit %}
+  <article class="post-card">
+    <div class="post-meta">
+      {% if post.category %}
+      <span class="post-category">{{ post.category }}</span>
+      {% endif %}
+      {% if post.date %}
+      <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%Y年%m月%d日" }}
+      </time>
+      {% endif %}
+    </div>
+
+    <h3 class="post-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
+
+    {% if post.excerpt %}
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    {% endif %}
+
+    {% if post.tags %}
+    <div class="post-tags">
+      {% for tag in post.tags limit: 6 %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>

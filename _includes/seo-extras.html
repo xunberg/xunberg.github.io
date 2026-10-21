@@ -1,0 +1,19 @@
+<link rel="alternate" type="application/rss+xml" title="{{ site.title | xml_escape }} RSS" href="{{ '/feed.xml' | absolute_url }}">
+
+{% if page.url == '/' or page.url == '/index.html' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | append: site.baseurl | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "inLanguage": "zh-CN",
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author | jsonify }},
+    "url": "https://github.com/{{ site.social.github }}"
+  }
+}
+</script>
+{% endif %}

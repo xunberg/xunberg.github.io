@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "MCP 教程"
+description: "Model Context Protocol (MCP) 从零实现、SSE/HTTP 传输、Node-RED 与 Dify 集成实战教程。"
 permalink: /mcp/
 ---
 

@@ -1,0 +1,14 @@
+# 系列文章在 front matter 中添加: series: life-science-agent
+life-science-agent:
+  title: "生命科学 Agent 实战"
+  status: "进行中"
+  permalink: "/agent/series/life-science-agent/"
+  summary: "从生命科学业务场景出发，搭建可落地的 AI Agent：工具链、MCP、LLM 编排与企业级约束，系列文章陆续更新。"
+  keywords:
+    - 生命科学
+    - AI Agent
+    - MCP
+    - 实验室自动化
+    - LLM
+  related_paths:
+    - "/agent/vibe-coding/"

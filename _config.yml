@@ -1,11 +1,18 @@
 # Site settings
 title: "Xunberg's Tech Blog"
-description: "MCP & AI Agent 技术分享"
+tagline: "MCP · AI Agent · LLM 实战"
+description: "Xunberg 技术博客：MCP 协议教程、AI Agent 与 LLM 工程实践、Node-RED/Dify 集成，以及生命科学 Agent 落地系列。含开源项目与踩坑复盘。"
 author: "Xunberg"
 email: "burgxun@163.com"
 url: "https://xunberg.github.io"
 baseurl: ""
-last_updated: "2025-07-10"
+lang: zh-CN
+locale: zh_CN
+logo: "/assets/images/og-default.jpg"
+image: "/assets/images/og-default.jpg"
+twitter:
+  card: summary_large_image
+last_updated: "2026-10-21"
 
 # Analytics
 google_analytics: "G-97GP17YFWB"  # 替换为您的 GA4 测量 ID
@@ -94,18 +101,22 @@ defaults:
       type: "mcp"
     values:
       layout: "post"
+      author: "Xunberg"
   - scope:
       path: ""
       type: "agent"
     values:
       layout: "post"
+      author: "Xunberg"
   - scope:
       path: ""
       type: "llm"
     values:
       layout: "post"
+      author: "Xunberg"
   - scope:
       path: ""
       type: "daily"
     values:
-      layout: "post"  
+      layout: "post"
+      author: "Xunberg"
