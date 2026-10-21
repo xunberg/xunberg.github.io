@@ -135,11 +135,33 @@
     });
   }
 
+  function initSupportDialog() {
+    const fab = document.getElementById('support-fab');
+    const dialog = document.getElementById('support-dialog');
+    const closeBtn = document.getElementById('support-dialog-close');
+    if (!fab || !dialog) return;
+
+    fab.addEventListener('click', () => {
+      if (typeof dialog.showModal === 'function') {
+        dialog.showModal();
+      }
+    });
+
+    closeBtn?.addEventListener('click', () => dialog.close());
+
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) {
+        dialog.close();
+      }
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     if (!document.querySelector('.post')) return;
     initTableOfContents();
     initCodeCopy();
     initReadingProgress();
     initAnchorScroll();
+    initSupportDialog();
   });
 })();

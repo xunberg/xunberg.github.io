@@ -41,7 +41,7 @@ layout: default
     </header>
 
     <div class="post-content">
-        <div class="container post-layout">
+        <div class="container post-layout{% if site.support.enabled and site.support.show_on_posts and page.support != false %} post-layout--with-support{% endif %}">
             <aside class="post-toc-panel" aria-label="文章目录">
                 <button type="button" class="post-toc-toggle" aria-expanded="false" aria-controls="post-toc">
                     <i class="fas fa-list" aria-hidden="true"></i> 目录
@@ -54,15 +54,16 @@ layout: default
             <div class="post-article" id="post-article">
                 {{ content }}
             </div>
+            {% if site.support.enabled and site.support.show_on_posts and page.support != false %}
+            <div class="post-support-rail" aria-hidden="false">
+                {% include support-tip.html variant="sidebar" %}
+            </div>
+            {% endif %}
         </div>
     </div>
 
     {% if site.support.enabled and site.support.show_on_posts and page.support != false %}
-    <div class="post-support">
-        <div class="container container--narrow">
-            {% include support-tip.html variant="compact" %}
-        </div>
-    </div>
+    {% include support-tip-float.html %}
     {% endif %}
 
     <footer class="post-footer">

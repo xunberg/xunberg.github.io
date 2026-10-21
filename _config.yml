@@ -57,8 +57,10 @@ support:
   enabled: true
   title: "支持作者"
   intro: "如果这篇文章对你有帮助，欢迎自愿打赏，请我喝杯咖啡。"
+  sidebar_intro: "有帮助？扫码请我喝杯咖啡"
   page_url: "/support/"
   show_on_posts: true
+  post_placement: sidebar
   wechat:
     label: "微信"
     image: "/assets/images/support/wechat-pay.jpg"
