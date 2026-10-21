@@ -6,7 +6,8 @@ layout: default
 
 <article class="post">
     <header class="post-header">
-        <div class="container">
+        <div class="container container--narrow">
+            {% include post-breadcrumb.html %}
             <div class="post-meta">
                 {% if page.category %}
                 <span class="post-category">{{ page.category }}</span>
@@ -15,6 +16,11 @@ layout: default
                 <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
                     {{ page.date | date: "%Y年%m月%d日" }}
                 </time>
+                {% endif %}
+                {% if page.series and site.data.series[page.series] %}
+                <a class="post-series-badge" href="{{ site.data.series[page.series].permalink | relative_url }}">
+                    {{ site.data.series[page.series].title }}
+                </a>
                 {% endif %}
             </div>
             
@@ -35,8 +41,19 @@ layout: default
     </header>
 
     <div class="post-content">
-        <div class="container">
-            {{ content }}
+        <div class="container post-layout">
+            <aside class="post-toc-panel" aria-label="文章目录">
+                <button type="button" class="post-toc-toggle" aria-expanded="false" aria-controls="post-toc">
+                    <i class="fas fa-list" aria-hidden="true"></i> 目录
+                </button>
+                <nav id="post-toc" class="post-toc">
+                    <p class="post-toc__heading">目录</p>
+                    <ol class="post-toc__list"></ol>
+                </nav>
+            </aside>
+            <div class="post-article" id="post-article">
+                {{ content }}
+            </div>
         </div>
     </div>
 
@@ -47,9 +64,10 @@ layout: default
         </div>
     </div>
     {% endif %}
-    
+
     <footer class="post-footer">
-        <div class="container">
+        <div class="container container--narrow">
+            {% include post-series-nav.html %}
             <div class="post-navigation">
                 {% if page.previous %}
                 <div class="nav-previous">
@@ -72,3 +90,5 @@ layout: default
         </div>
     </footer>
 </article>
+
+<script src="{{ '/assets/js/post-reading.js' | relative_url }}" defer></script>

@@ -10,19 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+    // Smooth scrolling for in-page anchors (non-article pages)
+    if (!document.querySelector('.post')) {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
-    });
+    }
     
     // Header scroll effect
     const header = document.querySelector('.site-header');
@@ -45,13 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add scroll effect to header background
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
-        if (scrolled > 50) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        } else {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.boxShadow = 'none';
-        }
+        header.classList.toggle('site-header--scrolled', scrolled > 50);
     });
     
     // Animate elements on scroll
@@ -75,77 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
-    });
-    
-    // Copy code to clipboard
-    document.querySelectorAll('pre code').forEach(codeBlock => {
-        const button = document.createElement('button');
-        button.className = 'copy-code-btn';
-        button.textContent = '复制';
-        button.style.cssText = `
-            position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            font-size: 0.75rem;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        `;
-        
-        const pre = codeBlock.parentElement;
-        pre.style.position = 'relative';
-        pre.appendChild(button);
-        
-        pre.addEventListener('mouseenter', () => {
-            button.style.opacity = '1';
-        });
-        
-        pre.addEventListener('mouseleave', () => {
-            button.style.opacity = '0';
-        });
-        
-        button.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText(codeBlock.textContent);
-                button.textContent = '已复制!';
-                setTimeout(() => {
-                    button.textContent = '复制';
-                }, 2000);
-            } catch (err) {
-                console.error('Failed to copy: ', err);
-                button.textContent = '复制失败';
-                setTimeout(() => {
-                    button.textContent = '复制';
-                }, 2000);
-            }
-        });
-    });
-    
-    // Reading progress indicator
-    const progressBar = document.createElement('div');
-    progressBar.className = 'reading-progress';
-    progressBar.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 3px;
-        background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-        z-index: 9999;
-        transition: width 0.3s ease;
-    `;
-    document.body.appendChild(progressBar);
-    
-    window.addEventListener('scroll', () => {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        progressBar.style.width = scrolled + '%';
     });
     
     // Add loading animation
