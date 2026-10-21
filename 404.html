@@ -1,0 +1,49 @@
+---
+layout: default
+title: "页面未找到"
+permalink: /404.html
+robots: noindex, follow
+---
+
+<section class="section">
+  <div class="container">
+    <div class="error-page">
+      <h1>404</h1>
+      <p>页面不存在或已迁移。你可以从首页或最新文章继续阅读。</p>
+      <div class="error-page__actions">
+        <a href="{{ '/' | relative_url }}" class="btn btn-primary">返回首页</a>
+        <a href="{{ '/mcp/' | relative_url }}" class="btn btn-secondary">MCP 教程</a>
+        <a href="{{ '/agent/series/life-science-agent/' | relative_url }}" class="btn btn-secondary">生命科学 Agent 系列</a>
+      </div>
+    </div>
+
+    <h2 class="section-title">最新文章</h2>
+    {% include latest-posts-grid.html limit=6 %}
+  </div>
+</section>
+
+<style>
+.error-page {
+  text-align: center;
+  padding: 2rem 0 3rem;
+}
+
+.error-page h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.error-page p {
+  max-width: 32rem;
+  margin: 0 auto 1.5rem;
+}
+
+.error-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+</style>

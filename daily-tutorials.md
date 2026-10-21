@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "日常分享"
+description: "开发日常：Java/Flink 故障排查、序列化 Bug 修复与工程踩坑记录。"
 permalink: /daily/
 ---
 
