@@ -122,6 +122,11 @@ permalink: /about/
         <p>
           如果您对我的文章有任何问题或建议，或者想要进行技术交流，欢迎通过以下方式联系我：
         </p>
+        <p>
+          如果博客内容对你有帮助，也欢迎前往
+          <a href="{{ '/support/' | relative_url }}">支持作者</a>
+          页面自愿打赏。
+        </p>
         <div class="contact-links">
           <a href="https://github.com/xunberg" target="_blank" class="contact-link">
             <i class="fab fa-github"></i>
