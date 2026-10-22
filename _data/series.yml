@@ -1,7 +1,7 @@
 # 系列文章在 front matter 中添加: series: life-science-agent
 life-science-agent:
   title: "生命科学 Agent 实战"
-  status: "连载中 · 第 1 篇已发布"
+  status: "连载中 · 第 1–2 篇已发布"
   permalink: "/agent/series/life-science-agent/"
   summary: "从生命科学业务场景出发，搭建可落地的 AI Agent：工具链、MCP、LLM 编排与企业级约束，系列文章陆续更新。"
   keywords:
