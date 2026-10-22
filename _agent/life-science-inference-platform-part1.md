@@ -162,8 +162,8 @@ Agent 的一次规划可以瞬间打满队列，然后长时间静默。这意�
 - 它既不是通用在线推理（任务太长），也不是传统 HPC（太不抗等待），定位是「**用在线服务的受理方式，跑 HPC 级别的任务**」；
 - 架构由四个决定锚定：**受理与执行解耦、按模型隔离队列、积压驱动弹性、弹性层与资源层正交**。
 
-下一篇我们不再讲抽象，直接落到**选型**：为什么这套链路最终落在消息队列 + Lag 驱动弹性 + GPU 虚拟化的组合上，而不是 vLLM / Triton / Slurm 这套现答案里的任何一个；以及三个互相打架的核心矛盾——**缩到零 vs 冷启动、长任务 vs 弹性缩容、整卡独占 vs 切分共享**——分别是怎么折中的。
+下一篇我们不再讲抽象，直接落到**选型**：为什么这套链路最终落在消息队列 + Lag 驱动弹性 + GPU 虚拟化的组合上，而不是 vLLM / Triton / Slurm 这套现答案里的任何一个；以及三个互相打架的核心矛盾——**缩到零 vs 冷启动、长任务 vs 弹性缩容、整卡独占 vs 切分共享**——分别是怎么折中的。详见 [第二篇]({{ '/agent/life-science-inference-platform-part2/' | relative_url }})。
 
 ---
 
-**系列导航**：[生命科学 Agent 实战系列]({{ '/agent/series/life-science-agent/' | relative_url }})
+**系列导航**：[第二篇 →]({{ '/agent/life-science-inference-platform-part2/' | relative_url }}) · [系列目录]({{ '/agent/series/life-science-agent/' | relative_url }})
