@@ -227,8 +227,8 @@ Agent 需要的是：返回一个结构体、任务失败时返回结构化错�
 
 到现在为止，我们把这套平台的「内部逻辑」讲完了。但有一个角色一直被当作背景板：**调用方 Agent**。
 
-实际上，这套架构里最有价值、也最容易被忽略的部分，恰恰是**平台与 Agent 之间的契约**：怎么告诉 Agent「前面还有 8 个任务，预计等 4 分钟」、怎么告诉它「Protenix 挂了，要不要试试 Boltz-2」、怎么保证 Agent 的重试不会把自己的平台打垮、以及——怎么度量这一切到底有没有变好。第三篇我们就讲这件事。
+实际上，这套架构里最有价值、也最容易被忽略的部分，恰恰是**平台与 Agent 之间的契约**：怎么告诉 Agent「前面还有 8 个任务，预计等 4 分钟」、怎么告诉它「Protenix 挂了，要不要试试 Boltz-2」、怎么保证 Agent 的重试不会把自己的平台打垮、以及——怎么度量这一切到底有没有变好。详见 [第三篇]({{ '/agent/life-science-inference-platform-part3/' | relative_url }})。
 
 ---
 
-**系列导航**：[← 第一篇]({{ '/agent/life-science-inference-platform-part1/' | relative_url }}) · [系列目录]({{ '/agent/series/life-science-agent/' | relative_url }})
+**系列导航**：[← 第一篇]({{ '/agent/life-science-inference-platform-part1/' | relative_url }}) · [第三篇 →]({{ '/agent/life-science-inference-platform-part3/' | relative_url }}) · [系列目录]({{ '/agent/series/life-science-agent/' | relative_url }})
