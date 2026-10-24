@@ -6,7 +6,7 @@
 > - **第二篇**：为什么是"消息队列 + 积压驱动弹性 + GPU 虚拟化"这套组合，以及三大核心矛盾的取舍。
 > - **第三篇（本文）**：平台与 Agent 之间究竟靠什么契约对话，怎么保证 Agent 不会把自己的平台打垮，以及怎么度量这套系统到底有没有真的变好。
 >
-> **关于图表**：文中图表以 Mermaid 源码内嵌，GitHub / 掘金 / 知乎等平台可直接渲染；若发布到不支持 Mermaid 的渠道（如公众号），可用 `figures/` 目录下的同名 PNG / SVG。
+> **发布说明**：第三篇已发布至 `_agent/life-science-inference-platform-part3.md`（`/agent/life-science-inference-platform-part3/`），图表见 `assets/images/agent/life-science-inference/p3-*.png`。
 
 
 
