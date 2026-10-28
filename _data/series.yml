@@ -1,9 +1,9 @@
 # 系列文章在 front matter 中添加: series: life-science-agent
 life-science-agent:
-  title: "生命科学 Agent 实战"
+  title: "生命科学推理平台"
   status: "已完结 · 共 3 篇"
   permalink: "/agent/series/life-science-agent/"
-  summary: "从生命科学业务场景出发，搭建可落地的 AI Agent：工具链、MCP、LLM 编排与企业级约束，系列文章陆续更新。"
+  summary: "GPU 有限时，怎样为生命科学 Agent 搭推理平台：负载画像、选型取舍，以及 Agent 协同、可观测性与成本闭环。"
   keywords:
     - 生命科学
     - AI Agent
@@ -28,3 +28,18 @@ agent-from-0-to-1:
   related_paths:
     - "/agent/agent-from-0-to-1-part1/"
     - "/agent/vibe-coding/"
+
+# 系列文章在 front matter 中添加: series: agent-observe-eval
+agent-observe-eval:
+  title: "Agent 观测与评测"
+  status: "筹备中 · 后续补充"
+  permalink: "/agent/series/agent-observe-eval/"
+  summary: "怎样给 Agent 搭观测和评测：链路追踪、运行指标、评测集和回归。章节随后补充。"
+  keywords:
+    - AI Agent
+    - 可观测性
+    - 评测
+    - Trace
+    - 系统搭建
+  related_paths:
+    - "/agent/"
