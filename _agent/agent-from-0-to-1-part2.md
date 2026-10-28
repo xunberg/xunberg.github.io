@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Agent 怎么向人提问"
-date: 2026-10-28
+date: 2026-10-26
 category: "Agent实战"
 series: agent-from-0-to-1
 series_order: 2
@@ -20,7 +20,9 @@ permalink: /agent/agent-from-0-to-1-part2/
 >
 > - [第一篇]({{ '/agent/agent-from-0-to-1-part1/' | relative_url }})：Demo 与生产的差距——有状态长事务。
 > - **第二篇（本文）**：向人提问时，这一轮怎样提交成等待，刷新和隔天再答都还能接上。
-> - 第三篇（待发布）：我们为什么把子 Agent 删了三次。
+> - [第三篇]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }})：子 Agent 删了三次。
+> - [第四篇]({{ '/agent/agent-from-0-to-1-part4/' | relative_url }})：接入和执行拆开。
+> - 第五篇起（待发布）：Checkpoint、轮次终态、记忆预算与未解问题。
 
 七月的一个下午，用户点了"同意"。
 
@@ -186,7 +188,7 @@ Agent 不一样。提问发生在图的中间，而这一轮是一个还没提�
 
 协议一旦成立，审批、计划、表单、自动回答、桌面端的高危确认，都是同一件事：中断要能落库、能回放、能被下一轮接上。
 
-下一篇，我们聊一个相反方向的决定：**我们为什么把子 Agent 删了三次。**
+下一篇，我们聊一个相反方向的决定：[我们删了三次子 Agent]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }})。
 
 ---
 
@@ -194,5 +196,5 @@ Agent 不一样。提问发生在图的中间，而这一轮是一个还没提�
 
 ---
 
-**系列导航**：[← 第一篇]({{ '/agent/agent-from-0-to-1-part1/' | relative_url }}) · [系列目录]({{ '/agent/series/agent-from-0-to-1/' | relative_url }})
+**系列导航**：[← 第一篇]({{ '/agent/agent-from-0-to-1-part1/' | relative_url }}) · [第三篇 →]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }}) · [系列目录]({{ '/agent/series/agent-from-0-to-1/' | relative_url }})
 
