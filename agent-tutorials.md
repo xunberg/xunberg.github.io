@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Agent 技术"
-description: "Agent 文章分三条线：生命科学推理平台、Agent 从 0 到 1 生产化手记，以及日常 Agent 分享。"
+description: "Agent 文章分四条线：生命科学推理平台、Agent 从 0 到 1、观测与评测，以及日常 Agent 分享。"
 permalink: /agent/
 ---
 
@@ -11,7 +11,7 @@ permalink: /agent/
       <span class="gradient-text">Agent 技术</span>
     </h1>
     <p class="hero-subtitle">
-      三条阅读线：生命科学推理平台、Agent 从 0 到 1，以及日常 Agent 分享。
+      四条阅读线：生命科学推理平台、Agent 从 0 到 1、观测与评测，以及日常 Agent 分享。
     </p>
   </div>
 </div>
@@ -22,6 +22,8 @@ permalink: /agent/
     {% assign platform_posts = site.agent | where: "series", "life-science-agent" | sort: "series_order" %}
     {% assign zero_one = site.data.series.agent-from-0-to-1 %}
     {% assign zero_one_posts = site.agent | where: "series", "agent-from-0-to-1" | sort: "series_order" %}
+    {% assign observe = site.data.series.agent-observe-eval %}
+    {% assign observe_posts = site.agent | where: "series", "agent-observe-eval" | sort: "series_order" %}
     {% assign notes = site.agent | where_exp: "item", "item.series == nil" | sort: "date" %}
 
     <article class="agent-track">
@@ -72,12 +74,40 @@ permalink: /agent/
       </ol>
     </article>
 
-    <article class="agent-track agent-track--notes">
+    <article class="agent-track">
       <header class="agent-track__head">
         <span class="agent-track__index">03</span>
         <div>
+          <h2 class="agent-track__title">
+            <a href="{{ observe.permalink | relative_url }}">Agent 观测与评测</a>
+          </h2>
+          <p class="agent-track__summary">{{ observe.summary }}</p>
+        </div>
+        <span class="agent-track__status">{{ observe.status }}</span>
+      </header>
+      {% if observe_posts.size > 0 %}
+      <ol class="agent-track__chapters">
+        {% for post in observe_posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            <span class="agent-track__no">{{ post.series_order }}</span>
+            <span class="agent-track__name">{{ post.title }}</span>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+          </a>
+        </li>
+        {% endfor %}
+      </ol>
+      {% else %}
+      <p class="agent-track__empty">这一系列还没开始更新，观测和评测的搭建笔记会补在这里。</p>
+      {% endif %}
+    </article>
+
+    <article class="agent-track agent-track--notes">
+      <header class="agent-track__head">
+        <span class="agent-track__index">04</span>
+        <div>
           <h2 class="agent-track__title">日常 Agent 分享</h2>
-          <p class="agent-track__summary">不属于上面两个系列的单篇实践。这一组会继续补充。</p>
+          <p class="agent-track__summary">不属于上面几个系列的单篇实践。这一组会继续补充。</p>
         </div>
         <span class="agent-track__status">持续补充</span>
       </header>
