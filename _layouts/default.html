@@ -19,15 +19,27 @@
     {% seo %}
     {% include seo-extras.html %}
     
-    <!-- Google Analytics -->
+    <!-- Google Analytics：海外与 Google 来源 -->
     {% if site.google_analytics %}
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+
+    <!-- 百度统计：国内访问 -->
+    {% if site.baidu_tongji %}
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu_tongji }}";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
     {% endif %}
 </head>
