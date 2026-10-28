@@ -28,7 +28,7 @@ keywords:
     </p>
 
     <h2>系列文章</h2>
-    <p class="series-status">连载中，新章节发布后自动出现在下方列表。</p>
+    <p class="series-status">连载中 · 第 1–4 篇已发布，后续章节上线后自动出现在下方列表。</p>
 
     <div class="posts-grid">
       {% assign series_posts = site.agent | where: "series", "agent-from-0-to-1" | sort: 'series_order' %}
