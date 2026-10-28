@@ -21,6 +21,7 @@ baidu_tongji: "1cf5122e812e7d43d2c06a7e1c45f282"  # 百度统计，用于国内�
 # Build settings
 exclude:
   - draft
+  - 用户手册.md
 markdown: kramdown
 highlighter: rouge
 theme: jekyll-theme-minimal
