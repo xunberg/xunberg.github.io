@@ -15,7 +15,8 @@ twitter:
 last_updated: "2026-10-21"
 
 # Analytics
-google_analytics: "G-97GP17YFWB"  # 替换为您的 GA4 测量 ID
+google_analytics: "G-97GP17YFWB"  # GA4，用于海外与 Google 来源
+baidu_tongji: "1cf5122e812e7d43d2c06a7e1c45f282"  # 百度统计，用于国内访问
 
 # Build settings
 exclude:
