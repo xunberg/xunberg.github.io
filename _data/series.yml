@@ -12,3 +12,19 @@ life-science-agent:
     - LLM
   related_paths:
     - "/agent/vibe-coding/"
+
+# 系列文章在 front matter 中添加: series: agent-from-0-to-1
+agent-from-0-to-1:
+  title: "Agent 从 0 到 1 · 生产化手记"
+  status: "连载中 · 第 1–2 篇已发布"
+  permalink: "/agent/series/agent-from-0-to-1/"
+  summary: "当 Agent 不再是一次请求，而是一笔有状态长事务时，生产系统该一条一条补上什么：人机等待、运行时拆分、Checkpoint、记忆预算与踩坑复盘。"
+  keywords:
+    - AI Agent
+    - Agent 生产化
+    - 长事务
+    - HITL
+    - 架构复盘
+  related_paths:
+    - "/agent/agent-from-0-to-1-part1/"
+    - "/agent/vibe-coding/"

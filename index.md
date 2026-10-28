@@ -10,11 +10,12 @@ description: "Xunberg 技术博客：MCP 协议、AI Agent 实战、LLM 推理�
       <span class="gradient-text">Xunberg's Tech Blog</span>
     </h1>
     <p class="hero-subtitle">
-      MCP · AI Agent · LLM 实战 · 生命科学 Agent 系列更新中
+      MCP · AI Agent · LLM 实战 · Agent 生产化手记连载中
     </p>
     <div class="hero-buttons">
       <a href="{{ '/mcp/' | relative_url }}" class="btn btn-primary">MCP 教程</a>
-      <a href="{{ '/agent/series/life-science-agent/' | relative_url }}" class="btn btn-secondary">生命科学 Agent 系列</a>
+      <a href="{{ '/agent/series/agent-from-0-to-1/' | relative_url }}" class="btn btn-secondary">Agent 生产化手记</a>
+      <a href="{{ '/agent/series/life-science-agent/' | relative_url }}" class="btn btn-secondary">生命科学系列</a>
       <a href="#latest-posts" class="btn btn-secondary">最新文章</a>
     </div>
   </div>

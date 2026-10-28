@@ -1,5 +1,7 @@
 # Agent 怎么向人提问
 
+> **发布说明**：第二篇已发布至 `_agent/agent-from-0-to-1-part2.md`（`/agent/agent-from-0-to-1-part2/`），图表见 `assets/images/agent/agent-from-0-to-1/p2-*.png`。
+>
 > Agent 生产化手记 · 02
 >
 > **系列导读**：本系列尝试回答一个具体问题——当 Agent 不再是一次请求，而是一个可能持续几十分钟、会中断、会失败、要花钱、要被人看懂的有状态长事务时，生产系统该一条一条补上什么。
