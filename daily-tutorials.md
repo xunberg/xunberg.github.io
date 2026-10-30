@@ -1,24 +1,24 @@
 ---
 layout: default
-title: "日常分享"
-description: "开发日常：Java/Flink 故障排查、序列化 Bug 修复与工程踩坑记录。"
+title: "工程笔记"
+description: "数据链路和线上服务的故障排查与修复：Flink、序列化和服务假死。"
 permalink: /daily/
 ---
 
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">
-      <span class="gradient-text">日常分享</span>
+      <span class="gradient-text">工程笔记</span>
     </h1>
     <p class="hero-subtitle">
-      记录工作中遇到的问题、解决方案和技术心得
+      数据链路和线上服务里的故障、修复和复盘
     </p>
   </div>
 </div>
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title">分享列表</h2>
+    <h2 class="section-title">笔记</h2>
     
     <div class="posts-grid">
       {% for post in site.daily %}
@@ -57,7 +57,7 @@ permalink: /daily/
     <div class="empty-state">
       <div class="empty-icon">📝</div>
       <h3>内容即将上线</h3>
-      <p>日常分享的内容正在准备中，敬请期待！</p>
+      <p>工程笔记还在整理，之后的故障复盘会放在这里。</p>
     </div>
     {% endif %}
   </div>
