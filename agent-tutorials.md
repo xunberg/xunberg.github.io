@@ -1,17 +1,17 @@
 ---
 layout: default
-title: "Agent 技术"
-description: "Agent 文章分四条线：生命科学推理平台、Agent 从 0 到 1、观测与评测，以及日常 Agent 分享。"
+title: "AI Agent"
+description: "AI Agent 文章分四条线：生命科学推理平台、Agent 从 0 到 1、观测与评测，以及日常 Agent 分享。"
 permalink: /agent/
 ---
 
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">
-      <span class="gradient-text">Agent 技术</span>
+      <span class="gradient-text">AI Agent</span>
     </h1>
     <p class="hero-subtitle">
-      四条阅读线：生命科学推理平台、Agent 从 0 到 1、观测与评测，以及日常 Agent 分享。
+      四条阅读线：生命科学推理平台、从 0 到 1 的生产化、观测与评测，以及单篇实践。
     </p>
   </div>
 </div>

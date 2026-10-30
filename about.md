@@ -10,7 +10,7 @@ permalink: /about/
       <span class="gradient-text">关于我</span>
     </h1>
     <p class="hero-subtitle">
-      十二年软件开发经验 | AI Agent 和物联网技术专家 | AI 编程实践者
+      十二年软件开发 · 实验室自动化、AI Agent 与数据架构
     </p>
   </div>
 </div>
@@ -21,13 +21,13 @@ permalink: /about/
       <div class="about-text">
         <h2>Hello! 我是 Xunberg</h2>
         <p>
-          我是一名拥有十二年软件开发经验的技术专家，专注于 AI Agent、物联网技术和 AI 编程实践的研究与应用。从传统软件开发到现代 AI 辅助编程，我见证并参与了技术变革的每一个关键节点。
+          我是一名有十二年软件开发经验的工程师。这个站点按三件事来组织：实验室自动化里的设备智能化、AI Agent 怎样进入生产，以及数据和模型这一侧的架构。
         </p>
         <p>
-          性格开朗，乐于沟通，喜欢和同事积极交流分享技术心得。在这个快速发展的 AI 时代，我深信"<strong>写代码从来不是瓶颈，代码最大的成本是理解，而不是写出来</strong>"。我致力于探索如何让人工智能更好地与现实世界交互，通过 MCP 协议构建强大的 AI Agent，让它们不仅能够理解和生成文本，还能够控制物理设备、访问实时数据，真正成为我们生活和工作中的智能助手。
+          性格开朗，乐于沟通，喜欢和同事交流技术心得。我认同一句话：<strong>写代码从来不是瓶颈，代码最大的成本是理解，而不是写出来</strong>。设备侧我目前用 MCP，在 Node-RED 里把实验设备做成服务，再接到 Dify，让模型调用真实设备。Anthropic 在 2026 年 8 月放出了 Model Hardware Standard（MHS）的研究预览，面向显微镜、液体处理、机械臂这类可编程设备，Agent 可以通过 MCP、命令行或代码访问它。标准还在小范围预览，我会继续跟，笔记写在「实验室自动化」。
         </p>
         <p>
-          目前我专注于企业内部大模型 LLM、Agent 的落地应用，以及使用 MCP 协议对边缘设备控制的调研。我使用开源产品构建企业内部的 LLM 和 Agent 平台，深度实践了 "Vibe Coding" 的开发方式，使用 bolt.new、Claude、Copilot 等 AI 工具完成了移液枪自动化调参系统等完整项目。我对 AGI 和 Vibe Coding 充满兴趣，也相信 AGI 的时代终将到来。
+          Agent 和生产系统记在 AI Agent 栏目：生命科学推理平台、从演示到上线的生产化手记，以及之后的观测与评测。数据侧做过 Flink、Spark 和数据湖，模型侧的检索、推理和微调记在「数据与模型」。企业内部的 LLM 和 Agent 平台用开源组件来搭。移液枪自动化调参是用 Vibe Coding 做完的一个完整项目，工具包括 bolt.new、Claude 和 Copilot。我对 AGI 有兴趣，也觉得它会到来。
         </p>
         
         <h3>生活爱好</h3>
@@ -47,7 +47,7 @@ permalink: /about/
           <li><strong>大数据技术</strong> - Flink、Spark、数据湖等技术栈</li>
           <li><strong>容器化与云平台</strong> - Docker、K8S，熟悉 AWS、腾讯云、阿里云</li>
           <li><strong>AI 编程实践</strong> - 熟练使用 bolt.new、Claude、GitHub Copilot 等 AI 工具进行快速原型开发和全栈应用构建</li>
-          <li><strong>MCP (Model Context Protocol)</strong> - 深入理解 MCP 协议标准，具有丰富的服务端开发经验</li>
+          <li><strong>实验室设备接入</strong> - 用 MCP 把 Node-RED 设备服务接到 Dify；持续关注 Anthropic 的 Model Hardware Standard（MHS）</li>
           <li><strong>Node-RED</strong> - 熟练使用 Node-RED 进行可视化流程编排和物联网应用开发</li>
           <li><strong>AI Agent 开发</strong> - 有经验将 AI 模型与外部工具集成，构建实用的智能应用</li>
           <li><strong>企业级 AI 平台</strong> - LLM 系统构建、Agent 平台开发、大模型落地应用</li>
@@ -107,11 +107,10 @@ permalink: /about/
           通过这个博客，我希望能够：
         </p>
         <ul>
-          <li>分享 AI 编程的实战经验和"踩坑"总结</li>
-          <li>提供 MCP 和 AI Agent 开发的详细教程和最佳实践</li>
-          <li>探讨 AI 技术在实际应用中的可能性和局限性</li>
-          <li>记录技术变革中的思考和感悟</li>
-          <li>与技术社区交流学习，共同推动技术发展</li>
+          <li>记录实验设备怎样接到大模型，从现在的 MCP 到之后的 MHS</li>
+          <li>记录 Agent 进入生产要补上的状态、等待、运行时和观测</li>
+          <li>记录数据和模型工程里的选型、训练和故障</li>
+          <li>把线上问题写成可以复用的笔记</li>
         </ul>
         
         <blockquote style="border-left: 4px solid var(--primary-color); padding-left: 1rem; margin: 2rem 0; font-style: italic; color: var(--text-secondary);">
