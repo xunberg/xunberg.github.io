@@ -64,7 +64,13 @@ DeerFlow 自带一个图执行服务：负责建图、执行、存 checkpoint、
 
 我们的第一反应很朴素：既然框架的运行时不好用，那就别用它，直接把 agent 搬进 gateway 里跑。
 
-于是 submit 路由里直接跑起了 astream。
+```python
+@app.post("/submit")
+async def submit(req):
+    agent = build_agent(req)
+    for chunk in agent.astream(req.message):   # 一个 HTTP 请求挂三分钟
+        yield sse(chunk)
+```
 
 结果换了一种疼：
 
@@ -195,4 +201,3 @@ DeerFlow 自带一个图执行服务：负责建图、执行、存 checkpoint、
 ---
 
 **系列导航**：[← 第三篇]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }}) · [第一篇]({{ '/agent/agent-from-0-to-1-part1/' | relative_url }}) · [系列目录]({{ '/agent/series/agent-from-0-to-1/' | relative_url }})
-
