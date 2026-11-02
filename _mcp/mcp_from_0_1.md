@@ -2,7 +2,7 @@
 layout: post
 title: "MCP Server From 0 to 1"
 date: 2025-05-08
-category: "MCP 教程"
+category: "MCP"
 tags: ["Python", "FastAPI", "MCP", "Server"]
 excerpt: "从零开始构建 MCP Server，详细介绍 Model Context Protocol 的实现原理和实践方法。"
 permalink: /mcp/mcp_from_0_1/

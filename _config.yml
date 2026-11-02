@@ -1,7 +1,7 @@
 # Site settings
 title: "Xunberg's Tech Blog"
-tagline: "MCP · AI Agent · LLM 实战"
-description: "Xunberg 技术博客：MCP 协议教程、AI Agent 与 LLM 工程实践、Node-RED/Dify 集成，以及生命科学 Agent 落地系列。含开源项目与踩坑复盘。"
+tagline: "实验室自动化 · AI Agent · 数据"
+description: "Xunberg 的技术笔记：实验室自动化设备怎样接入大模型，AI Agent 怎样进入生产，以及数据与模型工程。含 MCP、Dify、Node-RED 实践，并持续关注 Anthropic 的 MHS。"
 author: "Xunberg"
 email: "burgxun@163.com"
 url: "https://xunberg.github.io"
@@ -12,7 +12,7 @@ logo: "/assets/images/og-default.jpg"
 image: "/assets/images/og-default.jpg"
 twitter:
   card: summary_large_image
-last_updated: "2026-10-21"
+last_updated: "2026-10-30"
 
 # Analytics
 google_analytics: "G-97GP17YFWB"  # GA4，用于海外与 Google 来源
@@ -43,13 +43,13 @@ plugins:
 navigation:
   - title: "首页"
     url: "/"
-  - title: "MCP 教程"
+  - title: "实验室自动化"
     url: "/mcp/"
-  - title: "Agent 技术"
+  - title: "AI Agent"
     url: "/agent/"
-  - title: "LLM"
+  - title: "数据与模型"
     url: "/llm/"
-  - title: "日常分享"
+  - title: "工程笔记"
     url: "/daily/"
   - title: "关于"
     url: "/about/"

@@ -52,13 +52,13 @@ keywords:
     </div>
 
     {% if series_posts.size == 0 %}
-    <p>暂无已发布章节。你可以在 <a href="{{ '/agent/' | relative_url }}">Agent 技术</a> 栏目查看已上线的 Vibe Coding 等实战文。</p>
+    <p>暂无已发布章节。你可以在 <a href="{{ '/agent/' | relative_url }}">AI Agent</a> 栏目查看已上线的 Vibe Coding 等实战文。</p>
     {% endif %}
 
     <h2>相关阅读</h2>
     <ul>
       <li><a href="{{ '/agent/vibe-coding/' | relative_url }}">用 Vibe Coding 开发移液枪自动化调参系统</a> — 与本系列同属「设备 + Agent」方向</li>
-      <li><a href="{{ '/mcp/' | relative_url }}">MCP 教程</a> — Agent 对外工具能力的基础</li>
+      <li><a href="{{ '/mcp/' | relative_url }}">实验室自动化</a> — 用 MCP 把实验设备接到大模型，后续跟 MHS</li>
     </ul>
   </div>
 </section>

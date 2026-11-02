@@ -52,7 +52,7 @@ keywords:
     </div>
 
     {% if series_posts.size == 0 %}
-    <p>还没有已发布章节。可以先从 <a href="{{ '/agent/' | relative_url }}">Agent 技术</a> 看已经写完的系列。</p>
+    <p>还没有已发布章节。可以先从 <a href="{{ '/agent/' | relative_url }}">AI Agent</a> 看已经写完的系列。</p>
     {% endif %}
 
     <h2>相关阅读</h2>

@@ -1,24 +1,24 @@
 ---
 layout: default
-title: "LLM 技术"
-description: "大语言模型工程实践：vLLM 推理调优、RAG/HNSW 向量检索、小模型 SFT 与指令微调实战。"
+title: "数据与模型"
+description: "数据与模型工程：Elasticsearch HNSW 向量检索、vLLM 推理服务，以及小模型 SFT。"
 permalink: /llm/
 ---
 
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">
-      <span class="gradient-text">LLM 技术</span>
+      <span class="gradient-text">数据与模型</span>
     </h1>
     <p class="hero-subtitle">
-      大语言模型技术的深度探索与实践
+      向量检索、推理服务和小模型微调
     </p>
   </div>
 </div>
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title">技术分享</h2>
+    <h2 class="section-title">文章</h2>
     
     <div class="posts-grid">
       {% for post in site.llm %}
@@ -57,25 +57,25 @@ permalink: /llm/
 
 <section class="section section-alt">
   <div class="container">
-    <h2 class="section-title">关于 LLM</h2>
+    <h2 class="section-title">这一栏写什么</h2>
     
     <div class="about-grid">
       <div class="about-item">
         <div class="about-icon">🧠</div>
-        <h3>大语言模型</h3>
-        <p>深入探索 LLM 的部署、优化和推理技术，包括 vLLM、Transformers 等框架的使用心得。</p>
+        <h3>向量检索</h3>
+        <p>Elasticsearch HNSW 这一类近似最近邻，用在 RAG 的召回上。</p>
       </div>
       
       <div class="about-item">
         <div class="about-icon">⚡</div>
-        <h3>性能优化</h3>
-        <p>从显存管理到并发处理，分享大模型部署和推理过程中的性能调优经验和最佳实践。</p>
+        <h3>推理服务</h3>
+        <p>vLLM 的部署和推理调优，对应生命科学推理平台里那一层模型服务。</p>
       </div>
       
       <div class="about-item">
         <div class="about-icon">🚀</div>
-        <h3>应用实践</h3>
-        <p>记录 LLM 在实际项目中的应用经验，包括模型选择、部署方案和效果评估等实战分享。</p>
+        <h3>微调</h3>
+        <p>小模型 SFT 和指令数据：什么时候该训，数据怎样进训练。</p>
       </div>
     </div>
   </div>

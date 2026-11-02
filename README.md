@@ -1,15 +1,15 @@
 # Xunberg's Tech Blog
 
-[xunberg.github.io](https://xunberg.github.io/) 的源码。这是一个用 Jekyll 构建、由 GitHub Pages 托管的中文技术博客，记录 MCP、AI Agent、LLM 工程实践和线上问题复盘。
+[xunberg.github.io](https://xunberg.github.io/) 的源码。这是一个用 Jekyll 构建、由 GitHub Pages 托管的中文技术博客，按三条线组织：实验室自动化、AI Agent、数据与模型。
 
 ## 栏目
 
 | 栏目 | 路径 | 文章目录 |
 | --- | --- | --- |
-| MCP 教程 | [/mcp/](https://xunberg.github.io/mcp/) | `_mcp/` |
-| Agent 技术 | [/agent/](https://xunberg.github.io/agent/) | `_agent/` |
-| LLM | [/llm/](https://xunberg.github.io/llm/) | `_llm/` |
-| 日常分享 | [/daily/](https://xunberg.github.io/daily/) | `_daily/` |
+| 实验室自动化 | [/mcp/](https://xunberg.github.io/mcp/) | `_mcp/` |
+| AI Agent | [/agent/](https://xunberg.github.io/agent/) | `_agent/` |
+| 数据与模型 | [/llm/](https://xunberg.github.io/llm/) | `_llm/` |
+| 工程笔记 | [/daily/](https://xunberg.github.io/daily/) | `_daily/` |
 | 关于 | [/about/](https://xunberg.github.io/about/) | `about.md` |
 | 支持作者 | [/support/](https://xunberg.github.io/support/) | `support.md` |
 

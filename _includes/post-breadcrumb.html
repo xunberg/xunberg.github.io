@@ -1,16 +1,16 @@
 {% if page.collection %}
   {% case page.collection %}
     {% when 'mcp' %}
-      {% assign section_name = 'MCP 教程' %}
+      {% assign section_name = '实验室自动化' %}
       {% assign section_url = '/mcp/' %}
     {% when 'agent' %}
-      {% assign section_name = 'Agent 技术' %}
+      {% assign section_name = 'AI Agent' %}
       {% assign section_url = '/agent/' %}
     {% when 'llm' %}
-      {% assign section_name = 'LLM' %}
+      {% assign section_name = '数据与模型' %}
       {% assign section_url = '/llm/' %}
     {% when 'daily' %}
-      {% assign section_name = '日常分享' %}
+      {% assign section_name = '工程笔记' %}
       {% assign section_url = '/daily/' %}
     {% else %}
       {% assign section_name = nil %}
