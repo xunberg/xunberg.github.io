@@ -32,17 +32,19 @@ agent-from-0-to-1:
 # 系列文章在 front matter 中添加: series: agent-harness
 agent-harness:
   title: "Agent Harness · 平台改造实录"
-  status: "连载中 · 第 1 篇已发布，计划 8 篇"
+  status: "连载中 · 第 1、4 篇已发布，计划 8 篇"
   permalink: "/agent/series/agent-harness/"
-  summary: "深入解析 Agent 生产过程中的核心 Harness 工程：循环、工具协议、能力供给、沙箱和状态恢复。计划 8 篇，和「从 0 到 1」入门手记分开写。"
+  summary: "深入解析 Agent 生产过程中的核心 Harness 工程：能力供给、状态账本、行动协议、沙箱、监督、记忆、运行时和收官清单。计划 8 篇。"
   keywords:
     - Agent Harness
     - 能力供给
+    - 沙箱
     - 技能
     - 上下文
     - 检索
   related_paths:
     - "/agent/agent-harness-part1/"
+    - "/agent/agent-harness-part4/"
     - "/agent/agent-from-0-to-1-part3/"
 
 # 系列文章在 front matter 中添加: series: agent-observe-eval

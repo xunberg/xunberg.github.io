@@ -3,7 +3,7 @@
 {% assign from_agent = site.agent | where: "series", page.series %}
 {% assign from_llm = site.llm | where: "series", page.series %}
 {% assign from_daily = site.daily | where: "series", page.series %}
-{% assign series_posts = from_mcp | concat: from_agent | concat: from_llm | concat: from_daily | sort: "date" %}
+{% assign series_posts = from_mcp | concat: from_agent | concat: from_llm | concat: from_daily | sort: "series_order" %}
 {% assign series_meta = site.data.series[page.series] %}
 
 {% assign prev_in_series = nil %}

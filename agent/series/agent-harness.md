@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Agent Harness · 平台改造实录"
-description: "深入解析 Agent 生产过程中的核心 Harness 工程。计划 8 篇，第 1 篇已发布。和「从 0 到 1」入门手记分开。"
+description: "深入解析 Agent 生产过程中的核心 Harness 工程。计划 8 篇，第 1、4 篇已发布。和「从 0 到 1」入门手记分开。"
 permalink: /agent/series/agent-harness/
 keywords:
   - Agent Harness
@@ -24,11 +24,22 @@ keywords:
 <section class="section">
   <div class="container container--narrow series-page">
     <p class="series-lead">
-      这一系列深入解析 Agent 生产过程中的核心 Harness 工程：循环、工具协议、能力供给、沙箱执行、状态恢复。写的是夹具层怎样上线、怎样运维、怎样长大。<a href="{{ '/agent/series/agent-from-0-to-1/' | relative_url }}">Agent 从 0 到 1</a> 是入门手记，用故障现场把要补的东西讲清楚；实现拆开放在这里。计划 8 篇。已经排进目录的前四篇由外及内：能力供给、架构边界、协议闭环、运行时自身。每一节从还没关掉的约束往下推。
+      这一系列深入解析 Agent 生产过程中的核心 Harness 工程。八篇从模型身边一圈圈长出去：能力供给、状态与账本、行动协议、执行环境、监督交互、上下文纵深、运行时自身、收官清单。写的是夹具层怎样上线、怎样运维、怎样长大。<a href="{{ '/agent/series/agent-from-0-to-1/' | relative_url }}">Agent 从 0 到 1</a> 是入门手记，用故障现场把要补的东西讲清楚；实现拆开放在这里。每一节从还没关掉的约束往下推。
     </p>
 
     <h2>系列文章</h2>
-    <p class="series-status">连载中 · 第 1 篇已发布，计划共 8 篇。后四篇的题目随后补上。</p>
+    <p class="series-status">连载中 · 第 1、4 篇已发布，计划共 8 篇。</p>
+
+    <ol class="series-outline">
+      <li><a href="{{ '/agent/agent-harness-part1/' | relative_url }}">能力供给：900 个技能怎么进一个 Agent</a></li>
+      <li>状态与账本：两场分离，把能跑的 Agent 拆成能运维的平台（待发布）</li>
+      <li>行动协议：tool_call 的两类幽灵故障（待发布）</li>
+      <li><a href="{{ '/agent/agent-harness-part4/' | relative_url }}">执行环境：一台用户一台虚拟机</a></li>
+      <li>监督交互：把向用户提问做成一等协议（待发布）</li>
+      <li>上下文纵深：给 Agent 装记忆的三次返工（待发布）</li>
+      <li>运行时自身：被冻结的事件循环，和会误杀的巡检（待发布）</li>
+      <li>收官：还没解决的问题，与生产型 Harness 检查清单（待发布）</li>
+    </ol>
 
     <div class="posts-grid">
       {% assign series_posts = site.agent | where: "series", "agent-harness" | sort: "series_order" %}
@@ -88,5 +99,11 @@ keywords:
 
 .series-page li {
   margin-bottom: 0.5rem;
+}
+
+.series-outline {
+  margin: 0 0 2rem;
+  padding-left: 1.4rem;
+  line-height: 1.7;
 }
 </style>
