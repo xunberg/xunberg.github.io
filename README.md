@@ -23,6 +23,7 @@
 | --- | --- | --- |
 | 生命科学 Agent 实战 | 已完结，共 3 篇 | [/agent/series/life-science-agent/](https://xunberg.github.io/agent/series/life-science-agent/) |
 | Agent 从 0 到 1 · 生产化手记 | 连载中，第 1–4 篇已发布，计划 8 篇 | [/agent/series/agent-from-0-to-1/](https://xunberg.github.io/agent/series/agent-from-0-to-1/) |
+| Agent Harness · 平台改造实录 | 连载中，第 1 篇已发布，计划 4 篇 | [/agent/series/agent-harness/](https://xunberg.github.io/agent/series/agent-harness/) |
 
 ## 阅读与站点能力
 

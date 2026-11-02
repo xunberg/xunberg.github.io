@@ -59,6 +59,7 @@ keywords:
     <ul>
       <li><a href="{{ '/agent/series/life-science-agent/' | relative_url }}">生命科学 Agent 推理平台</a> — 算力约束下的 Agent 工具链与平台契约</li>
       <li><a href="{{ '/agent/vibe-coding/' | relative_url }}">Vibe Coding 与移液枪自动化</a> — 设备侧 Agent 落地</li>
+      <li><a href="{{ '/agent/series/agent-harness/' | relative_url }}">Agent Harness</a> — 同一层夹具的工程深潜：能力怎样供给给模型</li>
     </ul>
   </div>
 </section>

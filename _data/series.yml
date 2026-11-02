@@ -29,6 +29,22 @@ agent-from-0-to-1:
     - "/agent/agent-from-0-to-1-part1/"
     - "/agent/vibe-coding/"
 
+# 系列文章在 front matter 中添加: series: agent-harness
+agent-harness:
+  title: "Agent Harness · 平台改造实录"
+  status: "连载中 · 第 1 篇已发布，计划 4 篇"
+  permalink: "/agent/series/agent-harness/"
+  summary: "模型外围那一层怎样上线：能力供给、架构边界、工具协议和运行时自身。每一节从还没关掉的约束往下推。"
+  keywords:
+    - Agent Harness
+    - 能力供给
+    - 技能
+    - 上下文
+    - 检索
+  related_paths:
+    - "/agent/agent-harness-part1/"
+    - "/agent/agent-from-0-to-1-part3/"
+
 # 系列文章在 front matter 中添加: series: agent-observe-eval
 agent-observe-eval:
   title: "Agent 观测与评测"
