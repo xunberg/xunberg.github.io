@@ -18,7 +18,7 @@ agent-from-0-to-1:
   title: "Agent 从 0 到 1 · 生产化手记"
   status: "连载中 · 第 1–4 篇已发布"
   permalink: "/agent/series/agent-from-0-to-1/"
-  summary: "当 Agent 不再是一次请求，而是一笔有状态长事务时，生产系统该一条一条补上什么：人机等待、运行时拆分、Checkpoint、记忆预算与踩坑复盘。"
+  summary: "入门手记。用故障现场把生产化要补的东西讲清楚：人机等待、运行时拆分、Checkpoint 与记忆预算。夹具层的实现写在 Agent Harness。"
   keywords:
     - AI Agent
     - Agent 生产化
@@ -32,9 +32,9 @@ agent-from-0-to-1:
 # 系列文章在 front matter 中添加: series: agent-harness
 agent-harness:
   title: "Agent Harness · 平台改造实录"
-  status: "连载中 · 第 1 篇已发布，计划 4 篇"
+  status: "连载中 · 第 1 篇已发布，计划 8 篇"
   permalink: "/agent/series/agent-harness/"
-  summary: "模型外围那一层怎样上线：能力供给、架构边界、工具协议和运行时自身。每一节从还没关掉的约束往下推。"
+  summary: "深入解析 Agent 生产过程中的核心 Harness 工程：循环、工具协议、能力供给、沙箱和状态恢复。计划 8 篇，和「从 0 到 1」入门手记分开写。"
   keywords:
     - Agent Harness
     - 能力供给
