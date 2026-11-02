@@ -24,7 +24,7 @@ keywords:
 <section class="section">
   <div class="container container--narrow series-page">
     <p class="series-lead">
-      本系列不写框架教程，也不罗列最佳实践清单。记录的是内测与上线过程中的<strong>故障现场、判断与代价</strong>——刷新丢卡片、确认码过期、Checkpoint 拖垮排队、254KB 记忆烧掉十几万 token。计划共 8 篇，按踩坑顺序更新。
+      这一组是入门。记录内测与上线里的<strong>故障现场、判断与代价</strong>——刷新丢卡片、确认码过期、Checkpoint 拖垮排队、254KB 记忆烧掉十几万 token。夹具层怎样实现，写在 <a href="{{ '/agent/series/agent-harness/' | relative_url }}">Agent Harness</a>。计划共 8 篇，按踩坑顺序更新。
     </p>
 
     <h2>系列文章</h2>
@@ -59,6 +59,7 @@ keywords:
     <ul>
       <li><a href="{{ '/agent/series/life-science-agent/' | relative_url }}">生命科学 Agent 推理平台</a> — 算力约束下的 Agent 工具链与平台契约</li>
       <li><a href="{{ '/agent/vibe-coding/' | relative_url }}">Vibe Coding 与移液枪自动化</a> — 设备侧 Agent 落地</li>
+      <li><a href="{{ '/agent/series/agent-harness/' | relative_url }}">Agent Harness</a> — 生产过程中核心 Harness 工程的深入解析，计划 8 篇</li>
     </ul>
   </div>
 </section>
