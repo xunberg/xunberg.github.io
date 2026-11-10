@@ -22,7 +22,10 @@ permalink: /agent/agent-from-0-to-1-part4/
 > - [第二篇]({{ '/agent/agent-from-0-to-1-part2/' | relative_url }})：向人提问时，这一轮怎样提交成等待。
 > - [第三篇]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }})：子 Agent 删了三次。
 > - **第四篇（本文）**：接入和执行拆开，开单、回放不再绑在同一个进程上。
-> - 第五篇（待发布）：事实、传输、恢复点、执行现场分开存。
+> - [第五篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }})：事实、传输、恢复点、执行现场分开存，Checkpoint 不能当作数据库。
+> - [第六篇]({{ '/agent/agent-from-0-to-1-part6/' | relative_url }})：成功、中断、取消、异常收成同一个提交点。
+> - 第七篇（待发布）：254KB 的记忆怎样烧掉十几万 token。
+> - 第八篇（待发布）：轮次账本、租约、公平队列、能力评测、文档五处还没补上。
 
 有一次，我们打开 API 容器的镜像看了一眼：好几个 G。
 
@@ -192,7 +195,7 @@ async def submit(req):
 
 我们后来分别用三种机制去解：队列加心跳管"谁在跑"，四态收尾管"怎么结束"，数据库加回放管"从哪看"。
 
-这三件里最难的是第三件。下一篇，我们就聊它：**状态到底该放在哪。**
+这三件里最难的是第三件。[下一篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }})，我们就聊它：**状态到底该放在哪。**
 
 ---
 
@@ -200,4 +203,4 @@ async def submit(req):
 
 ---
 
-**系列导航**：[← 第三篇]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }}) · [第一篇]({{ '/agent/agent-from-0-to-1-part1/' | relative_url }}) · [系列目录]({{ '/agent/series/agent-from-0-to-1/' | relative_url }})
+**系列导航**：[← 第三篇]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }}) · [第五篇 →]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }}) · [系列目录]({{ '/agent/series/agent-from-0-to-1/' | relative_url }})
