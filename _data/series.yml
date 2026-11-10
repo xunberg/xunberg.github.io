@@ -16,9 +16,9 @@ life-science-agent:
 # 系列文章在 front matter 中添加: series: agent-from-0-to-1
 agent-from-0-to-1:
   title: "Agent 从 0 到 1 · 生产化手记"
-  status: "连载中 · 第 1–4 篇已发布"
+  status: "连载中 · 第 1–6 篇已发布，计划 8 篇"
   permalink: "/agent/series/agent-from-0-to-1/"
-  summary: "入门手记。用故障现场把生产化要补的东西讲清楚：人机等待、运行时拆分、Checkpoint 与记忆预算。夹具层的实现写在 Agent Harness。"
+  summary: "入门手记。用故障现场把生产化要补的东西讲清楚：人机等待、运行时拆分、Checkpoint、轮次终态与记忆预算。夹具层的实现写在 Agent Harness。"
   keywords:
     - AI Agent
     - Agent 生产化
@@ -27,6 +27,8 @@ agent-from-0-to-1:
     - 架构复盘
   related_paths:
     - "/agent/agent-from-0-to-1-part1/"
+    - "/agent/agent-from-0-to-1-part5/"
+    - "/agent/agent-from-0-to-1-part6/"
     - "/agent/vibe-coding/"
 
 # 系列文章在 front matter 中添加: series: agent-harness

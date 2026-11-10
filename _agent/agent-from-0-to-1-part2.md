@@ -22,7 +22,10 @@ permalink: /agent/agent-from-0-to-1-part2/
 > - **第二篇（本文）**：向人提问时，这一轮怎样提交成等待，刷新和隔天再答都还能接上。
 > - [第三篇]({{ '/agent/agent-from-0-to-1-part3/' | relative_url }})：子 Agent 删了三次。
 > - [第四篇]({{ '/agent/agent-from-0-to-1-part4/' | relative_url }})：接入和执行拆开。
-> - 第五篇起（待发布）：Checkpoint、轮次终态、记忆预算与未解问题。
+> - [第五篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }})：事实、传输、恢复点、执行现场分开存，Checkpoint 不能当作数据库。
+> - [第六篇]({{ '/agent/agent-from-0-to-1-part6/' | relative_url }})：成功、中断、取消、异常收成同一个提交点。
+> - 第七篇（待发布）：254KB 的记忆怎样烧掉十几万 token。
+> - 第八篇（待发布）：轮次账本、租约、公平队列、能力评测、文档五处还没补上。
 
 七月的一个下午，用户点了"同意"。
 
