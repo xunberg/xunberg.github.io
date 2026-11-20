@@ -24,8 +24,8 @@ permalink: /agent/agent-from-0-to-1-part4/
 > - **第四篇（本文）**：接入和执行拆开，开单、回放不再绑在同一个进程上。
 > - [第五篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }})：事实、传输、恢复点、执行现场分开存，Checkpoint 不能当作数据库。
 > - [第六篇]({{ '/agent/agent-from-0-to-1-part6/' | relative_url }})：成功、中断、取消、异常收成同一个提交点。
-> - 第七篇（待发布）：254KB 的记忆怎样烧掉十几万 token。
-> - 第八篇（待发布）：轮次账本、租约、公平队列、能力评测、文档五处还没补上。
+> - [第七篇]({{ '/agent/agent-from-0-to-1-part7/' | relative_url }})：254KB 的记忆怎样烧掉十几万 token。
+> - [第八篇]({{ '/agent/agent-from-0-to-1-part8/' | relative_url }})：轮次账本、租约、公平队列、能力评测、文档五处还没补上。
 
 有一次，我们打开 API 容器的镜像看了一眼：好几个 G。
 

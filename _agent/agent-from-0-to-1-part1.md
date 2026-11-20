@@ -24,8 +24,8 @@ permalink: /agent/agent-from-0-to-1-part1/
 > - [第四篇]({{ '/agent/agent-from-0-to-1-part4/' | relative_url }})：接入和执行拆开，开单与回放不再绑在同一个进程上。
 > - [第五篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }})：事实、传输、恢复点、执行现场分开存，Checkpoint 不能当作数据库。
 > - [第六篇]({{ '/agent/agent-from-0-to-1-part6/' | relative_url }})：成功、中断、取消、异常收成同一个提交点。
-> - 第七篇（待发布）：254KB 的记忆怎样烧掉十几万 token。
-> - 第八篇（待发布）：轮次账本、租约、公平队列、能力评测、文档五处还没补上。
+> - [第七篇]({{ '/agent/agent-from-0-to-1-part7/' | relative_url }})：254KB 的记忆怎样烧掉十几万 token。
+> - [第八篇]({{ '/agent/agent-from-0-to-1-part8/' | relative_url }})：轮次账本、租约、公平队列、能力评测、文档五处还没补上。
 >
 > 本系列计划共 8 篇，按踩坑顺序写；下文「接下来七篇」是完整目录。
 
@@ -208,8 +208,8 @@ Demo 要证明能力存在。生产要证明：能力用错时，爆炸半径有
 3. **[《我们把 Agent 从框架的运行时里抠了出来》]({{ '/agent/agent-from-0-to-1-part4/' | relative_url }})**——接入层开单、回放；执行层把这一轮跑完。粘在一起就无法扩，也无法在发布时活下来。
 4. **[《Checkpoint 不是数据库》]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }})**——恢复点、账本、在途传输为什么不能合成一份。断线重连和假死自愈从这里来。
 5. **[《一百三十个 bug 之后：Agent 轮次的四种死法》]({{ '/agent/agent-from-0-to-1-part6/' | relative_url }})**——收尾是提交点。不收敛成一个函数，每种死法都会把账做脏。
-6. **《254KB 的记忆，烧掉了 14 万 token》**——上下文是预算。全量注入是把档案当寄存器。
-7. **《我们还没解决的 5 个问题》**——轮次账本、租约、公平队列、能力评测、文档漂移。
+6. **[《254KB 的记忆，烧掉了 14 万 token》]({{ '/agent/agent-from-0-to-1-part7/' | relative_url }})**——上下文是预算。全量注入是把档案当寄存器。
+7. **[《我们还没解决的 5 个问题》]({{ '/agent/agent-from-0-to-1-part8/' | relative_url }})**——轮次账本、租约、公平队列、能力评测、文档漂移。
 
 ---
 
