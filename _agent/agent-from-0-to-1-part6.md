@@ -24,8 +24,8 @@ permalink: /agent/agent-from-0-to-1-part6/
 > - [第四篇]({{ '/agent/agent-from-0-to-1-part4/' | relative_url }})：接入和执行拆开，开单、回放和把这一轮跑完，不再绑在同一个进程上。
 > - [第五篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }})：事实、传输、恢复点、执行现场分开存，Checkpoint 不能当作数据库。
 > - **第六篇（本文）**：成功、中断、取消、异常收成同一个提交点，执行不能靠重试再做一遍。
-> - 第七篇（待发布）：254KB 的记忆怎样烧掉十几万 token，这笔预算取决于注入多少、何时注入、谁来写。
-> - 第八篇（待发布）：轮次账本、租约、公平队列、能力评测、文档五处还没补上，现状离那句话还有多远。
+> - [第七篇]({{ '/agent/agent-from-0-to-1-part7/' | relative_url }})：254KB 的记忆怎样烧掉十几万 token，这笔预算取决于注入多少、何时注入、谁来写。
+> - [第八篇]({{ '/agent/agent-from-0-to-1-part8/' | relative_url }})：轮次账本、租约、公平队列、能力评测、文档五处还没补上，现状离那句话还有多远。
 
 有个会话，每一轮都失败，失败原因都一样。
 
@@ -162,7 +162,7 @@ except Exception:
 
 成功、用户中断、外部取消、执行异常，四种走同一个函数。请求失败了，返回错误就结束。这一轮失败了，还得让人看见失败在哪一步、已经做了什么、能不能接着来。
 
-下一篇，我们换个方向，聊一个更贵的东西：**上下文。**
+[下一篇]({{ '/agent/agent-from-0-to-1-part7/' | relative_url }})，我们换个方向，聊一个更贵的东西：**上下文。**
 
 ---
 
@@ -170,4 +170,4 @@ except Exception:
 
 ---
 
-**系列导航**：[← 第五篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }}) · [第一篇]({{ '/agent/agent-from-0-to-1-part1/' | relative_url }}) · [系列目录]({{ '/agent/series/agent-from-0-to-1/' | relative_url }})
+**系列导航**：[← 第五篇]({{ '/agent/agent-from-0-to-1-part5/' | relative_url }}) · [第七篇 →]({{ '/agent/agent-from-0-to-1-part7/' | relative_url }}) · [系列目录]({{ '/agent/series/agent-from-0-to-1/' | relative_url }})

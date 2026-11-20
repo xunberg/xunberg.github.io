@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Agent 从 0 到 1 · 生产化手记"
-description: "Agent 生产化系列：从 Demo 到可上线 10 个月的有状态长事务——人机提问、子 Agent、运行时拆分、Checkpoint 与记忆预算，按踩坑顺序连载。"
+description: "Agent 生产化系列共 8 篇：从 Demo 到有状态长事务，写人机提问、运行时拆分、Checkpoint、记忆预算，以及还没补上的五个洞。"
 permalink: /agent/series/agent-from-0-to-1/
 keywords:
   - Agent 生产化
@@ -24,11 +24,11 @@ keywords:
 <section class="section">
   <div class="container container--narrow series-page">
     <p class="series-lead">
-      这一组是入门。记录内测与上线里的<strong>故障现场、判断与代价</strong>——刷新丢卡片、确认码过期、Checkpoint 拖垮排队、254KB 记忆烧掉十几万 token。夹具层怎样实现，写在 <a href="{{ '/agent/series/agent-harness/' | relative_url }}">Agent Harness</a>。计划共 8 篇，按踩坑顺序更新。
+      这一组是入门。记录内测与上线里的<strong>故障现场、判断与代价</strong>——刷新丢卡片、确认码过期、Checkpoint 拖垮排队、254KB 记忆烧掉十几万 token。夹具层怎样实现，写在 <a href="{{ '/agent/series/agent-harness/' | relative_url }}">Agent Harness</a>。共 8 篇，按踩坑顺序写完。
     </p>
 
     <h2>系列文章</h2>
-    <p class="series-status">连载中 · 第 1–6 篇已发布，计划共 8 篇。第 7 篇写记忆预算，第 8 篇写还没补上的五处。</p>
+    <p class="series-status">已完结 · 共 8 篇。</p>
 
     <div class="posts-grid">
       {% assign series_posts = site.agent | where: "series", "agent-from-0-to-1" | sort: 'series_order' %}
