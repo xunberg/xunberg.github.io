@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Agent Harness · 平台改造实录"
-description: "深入解析 Agent 生产过程中的核心 Harness 工程。计划 8 篇，第 1、4 篇已发布。和「从 0 到 1」入门手记分开。"
+description: "深入解析 Agent 生产过程中的核心 Harness 工程。计划 8 篇，第 1、2、4 篇已发布。和「从 0 到 1」入门手记分开。"
 permalink: /agent/series/agent-harness/
 keywords:
   - Agent Harness
@@ -28,11 +28,11 @@ keywords:
     </p>
 
     <h2>系列文章</h2>
-    <p class="series-status">连载中 · 第 1、4 篇已发布，计划共 8 篇。</p>
+    <p class="series-status">连载中 · 第 1、2、4 篇已发布，计划共 8 篇。</p>
 
     <ol class="series-outline">
       <li><a href="{{ '/agent/agent-harness-part1/' | relative_url }}">能力供给：900 个技能怎么进一个 Agent</a></li>
-      <li>状态与账本：两场分离，把能跑的 Agent 拆成能运维的平台（待发布）</li>
+      <li><a href="{{ '/agent/agent-harness-part2/' | relative_url }}">状态与账本：两场分离，把能跑的 Agent 拆成能运维的平台</a></li>
       <li>行动协议：tool_call 的两类幽灵故障（待发布）</li>
       <li><a href="{{ '/agent/agent-harness-part4/' | relative_url }}">执行环境：一台用户一台虚拟机</a></li>
       <li>监督交互：把向用户提问做成一等协议（待发布）</li>
