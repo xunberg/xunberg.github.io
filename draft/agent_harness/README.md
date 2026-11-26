@@ -14,11 +14,11 @@
 | --- | --- | --- | --- | --- | --- |
 | 01 | 能力供给 | 900 个技能怎么进一个 Agent：一个能力供给体系的完整演进 | `01-skill-supply-system.md` | Claude Agent Skills（SKILL.md 渐进披露）/ MCP 工具面 | ✅ 含 5 图 |
 | 02 | 状态与账本 | 两场分离：把一个能跑的 Agent 拆成能运维的平台 | `02-two-separations.md` | sessions / resume / 会话持久化与压缩边界 | ✅ 含 2 图 |
-| 03 | 行动协议 | 救不回来的会话，和偶发破损的参数：tool_call 的两类幽灵故障 | `03-tool-call-ghost-failures.md` | agent loop 核心、工具调用协议完整性 | ✅ 含 2 图 |
-| 04 | 执行环境 | Agent 的手：一台用户一台虚拟机，和它带来的所有麻烦 | `04-sandbox-contracts.md` | sandbox（Seatbelt/landlock 级隔离）、permission modes | ✅ 含 4 图 |
+| 03 | 行动协议 | 每轮都失败的会话，和中途断掉的参数：tool_call 的两类协议故障 | `03-tool-call-ghost-failures.md` | agent loop 核心、工具调用协议完整性 | ✅ 含 2 图 |
+| 04 | 执行环境 | 沙箱是一组契约：每用户一台虚拟机 | `04-sandbox-contracts.md` | sandbox（Seatbelt/landlock 级隔离）、permission modes | ✅ 含 4 图 |
 | 05 | 监督交互 | 等人不是故障：把"向用户提问"做成一等协议 | `05-*.md` 待写 | approval policy（untrusted/on-request/never）、plan mode、interrupt | 📝 规划 |
 | 06 | 上下文纵深 | 给 Agent 装记忆，我们返工了三次 | `06-*.md` 待写 | CLAUDE.md / AGENTS.md、跨会话记忆 | 📝 规划 |
-| 07 | 运行时自身 | 平台自毁的两种方式：被冻结的事件循环，和会误杀的巡检 | `07-frozen-loop-and-false-death.md` | 崩溃恢复、长驻服务的容错与自持 | ✅ 含 2 图 |
+| 07 | 运行时自身 | 保护逻辑停住了平台：事件循环被堵住，巡检把还在输出的轮次判死 | `07-frozen-loop-and-false-death.md` | 崩溃恢复、长驻服务的容错与自持 | ✅ 含 2 图 |
 | 08 | 收官 | 还没解决的八个问题，和一份生产型 Harness 检查清单 | `08-*.md` 待写 | 生产化 checklists 的平台工程版 | 📝 规划 |
 
 叙事弧：**01 模型知道什么 → 02 对话留下什么 → 03 它怎么行动 → 04 行动落在哪 → 05 谁来纠偏 → 06 跨会话记得什么 → 07 平台怎么活 → 08 清单。**
@@ -49,9 +49,9 @@
 | --- | --- | --- | --- |
 | 1–5 | flowchart ×4 / sequence ×1 | 01 | 供给全景、三次搬家、两层路由与权限门、检索四代、select 六站时序 |
 | 6–7 | flowchart ×1 / sequence ×1 | 02 | 两场分离终态、断线重连 resume 时序 |
-| 8–9 | flowchart ×1 / sequence ×1 | 03 | 毒循环、下一轮头部闭环时序 |
+| 8–9 | flowchart ×1 / sequence ×1 | 03 | 修复输出成为下一轮输入、新轮次开头补配对 |
 | 10–13 | flowchart ×2 / state ×1 / sequence ×1 | 04 | 沙箱四代形态、存储迁移与双存储边界、三级休眠状态机、execute 六道工序时序 |
-| 14–15 | flowchart ×1 / sequence ×1 | 07 | flush 冻住事件循环、kill -9 后的判死时序 |
+| 14–15 | flowchart ×1 / sequence ×1 | 07 | flush 堵住事件循环、kill -9 后的判死时序 |
 
 均为 Mermaid 标准语法，GitHub、GitLab、语雀、Notion、多数博客平台可直接渲染。05–08 成文时按同一风格补图。
 
